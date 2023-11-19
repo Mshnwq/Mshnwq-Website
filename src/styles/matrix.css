@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: #0f0; /* Green text color */
+    font-family: "Courier New", monospace;
+    overflow: hidden;
+}
+
+/* Create the digital rain effect */
+/* .digit {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.5;
+} */
+
+/* Animation for the falling characters */
+/* @keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+} */
+
+/* Apply animation to individual characters */
+/* .digit span {
+    display: block;
+    animation: fall 8s linear infinite;
+    animation-delay: calc(0.1s * var(--delay));
+} */
