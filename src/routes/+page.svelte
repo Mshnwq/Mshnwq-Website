@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<nav>
+  <a href="/">Home</a>
+  <a href="/blog">blog</a>
+  <a href="/contact">contact</a>
+</nav>
+
+<h1>Home page</h1>
+
+<script lang="ts">
+  import { onDestroy, onMount } from 'svelte'
+  onMount(() => console.log('Mounted home page'))
+  onDestroy(() => console.log('Unmounted home page'))
+</script>
