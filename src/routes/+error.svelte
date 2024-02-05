@@ -1,5 +1,6 @@
 <script>
   import { page } from '$app/stores';
+  import LinkButton from '$lib/components/LinkButton.svelte';
 
   const emojis = {
     // TODO add the rest!
@@ -26,6 +27,7 @@
   <span style="font-size: 10em">
     {emojis[$page.status] ?? emojis[500]}
   </span>
+  <LinkButton to="/">Back Home</LinkButton> 
 </div>
 
 <style lang="scss">
