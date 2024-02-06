@@ -1,0 +1,17 @@
+{
+  "short_name": "Mshnwq",
+  "name": "Hayan Al-Machnouk",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/pwa/favicon-2152x2152.png",
+      "type": "image/png",
+      "sizes": "2152x2152"
+    }
+  ],
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ff0099",
+  "background_color": "#101010",
+  "description": "Mshnwq's Personal Website"
+}
