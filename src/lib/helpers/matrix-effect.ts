@@ -10,7 +10,7 @@ export default class MatrixEffect {
     this.canvas = document.createElement('canvas');
     document.querySelector(targetContainer)?.appendChild(this.canvas);
     this.context = this.canvas.getContext('2d')!;
-    this.matrix = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッンabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()*&^%+-/~{[|`]}";
+    this.matrix = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッンabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()*&^%+-/~{[|`]}ذضصثقفغعهخحجدشسيبلاتنمئءؤرىةوزظطك";
     this.font_size = 12;
     this.columns = 0;
     this.drops = [];
