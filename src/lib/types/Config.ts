@@ -2,7 +2,7 @@ import type { RssUrlList } from '$lib/types/RssXml';
 import type { Usernames } from '$lib/types/Socials';
 import type { Locale } from '$lib/types/Language';
 
-export type Theme = 'dark' | 'light' | 'system' | 'callisto';
+export type Theme = 'dark' | 'light' | 'system' | 'callisto' | 'crimson';
 
 export interface TechStackItem {
   language: string;
@@ -11,6 +11,7 @@ export interface TechStackItem {
 
 export interface SiteConfig {
   title: string; // Website title / name
+  nickname: string; // Website nickname
   description: string; // Website description
   source: string; // Link to project source (e.g. on GitHub)
   baseUrl: string; // The URL where the site is hosted
@@ -96,8 +97,4 @@ export interface SiteConfig {
   techStackExtras: {
     [key: string]: string[],
   };
-  plausible?: {
-    scriptSrc: string;
-    domain: string;
-  },
 }

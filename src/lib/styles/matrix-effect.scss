@@ -1,0 +1,8 @@
+:global(#matrix-effect) {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  color: var(--matrix-effect-text);
+  background: var(--matrix-effect-background);
+  overflow: hidden;
+}
