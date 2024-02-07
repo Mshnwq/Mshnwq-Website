@@ -2,9 +2,10 @@ import type { SiteConfig } from '$lib/types/Config';
 
 const config: SiteConfig = {
   title: 'Hayan Al-Machnouk',
+  nickname: 'Mshnwq',
   description: '',
-  source: 'https://github.com/lissy93/my-website',
-  baseUrl: 'https://as93.net',
+  source: 'https://github.com/mshnwq/mshnwq-website',
+  baseUrl: 'https://mshnwq.com',
   initialFeeds: [{ label: 'Notes', url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blog.atom' }],
   additionalFeeds: [
     { label: 'Notes', url: 'https://notes.aliciasykes.com/feed' },
@@ -70,9 +71,10 @@ const config: SiteConfig = {
   ],
   footerInfo: {
     author: 'Hayan Al-Machnouk',
-    authorSite: 'https://github.com/mshnwq',
+    authorSite: 'https://github.com/Mshnwq',
     license: 'MIT',
-    licenseLink: '',
+    // TODO: MIT file
+    licenseLink: 'https://github.com/Mshnwq/mshnwq-website',
     copyright: true,
   },
   githubUser: 'mshnwq',
@@ -93,6 +95,8 @@ const config: SiteConfig = {
       'accent-4': '#1de691',
       'home-accent-background': '#2a3367',
       'home-accent-foreground': 'var(--foreground)',
+      'matrix-effect-background': 'rgba(16, 16, 16, 0.05)',
+      'matrix-effect-text': 'var(--foreground)',
     },
     light: {
       background: '#ededed',
@@ -101,6 +105,8 @@ const config: SiteConfig = {
       'card-border': '1px solid #0000001a',
       'home-accent-background': '#2a3367',
       'home-accent-foreground': 'var(--foreground)',
+      'matrix-effect-background': 'rgba(237, 237, 237, 0.05)',
+      'matrix-effect-text': 'var(--foreground)',
     },
     callisto: {
       background: '#0a192f',
@@ -114,6 +120,24 @@ const config: SiteConfig = {
       'accent-4': '#00ccb4',
       'home-accent-background': '#00ccb4',
       'home-tile-background': '#0B1021',
+      'matrix-effect-background': 'rgba(16, 16, 16, 0.05)',
+      'matrix-effect-text': '#36ba01',
+      // 'matrix-effect-text': '#03A062',
+    },
+    crimson: {
+      background: '#101010',
+      foreground: '#B01030',
+      'dimmed-text': '#8892b0',
+      'card-background': '#0b1021',
+      'card-border': '1px solid #ffffff1a',
+      'accent-1': '#00ccb4',
+      'accent-2': '#00ccb4',
+      'accent-3': '#00ccb4',
+      'accent-4': '#00ccb4',
+      'home-accent-background': '#00ccb4',
+      'home-tile-background': '#0B1021',
+      'matrix-effect-background': 'rgba(16, 16, 16, 0.05)',
+      'matrix-effect-text': 'var(--foreground)',
     },
   },
   workExperience: [
@@ -394,24 +418,16 @@ const config: SiteConfig = {
     { postRef: '', thumbnail: '' },
   ],
   contact: {
-    name: 'Alicia Sykes',
-    email: 'alicia@omg.lol',
-    website: 'https://aliciasykes.com',
+    name: 'Hayan Al-Machnouk',
+    email: 'hayan@mshnwq.com',
+    website: 'https://mshnwq.com',
     socials: {
-      Twitter: 'Lissy_Sykes',
-      GitHub: 'Lissy93',
-      'Dev.to': 'Lissy93',
-      Mastodon: '@Lissy93',
-      LinkedIn: 'in/AliciaSykes',
-      Instagram: 'liss.sykes',
-      YouTube: 'AliciaSykes',
-      Reddit: 'lissy93',
-      StackOverflow: '979052/alicia',
-      KeyBase: 'AliciaSykes',
-      Facebook: 'Liss.Sykes',
-      PeerList: 'alicia',
-      CodersRank: 'lissy93',
-      'OMG.lol': 'alicia',
+      Twitter: 'mshnwq00',
+      GitHub: 'Mshnwq',
+      LinkedIn: 'in/hayan-al-machnouk/',
+      Reddit: 'mshnwq',
+      StackOverflow: '21552622/mshnwq',
+      // 'OMG.lol': 'alicia',
     },
     socialButtonLimit: 6,
     mailerConfig: {
@@ -614,10 +630,6 @@ const config: SiteConfig = {
     security: [
       'Nmap', 'OWASPZAP', 'BurpSuite', 'Wireshark',
     ],
-  },
-  plausible: {
-    scriptSrc: 'https://no-track.as93.net/js/script.js',
-    domain: 'aliciasykes.com',
   },
 };
 
