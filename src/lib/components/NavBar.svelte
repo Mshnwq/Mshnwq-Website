@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import { config } from '$lib/store/BlogStore';
+  import { config } from '$lib/store/Config';
   import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
   import LanguageSwitcher from '$lib/components/LanguageSwitcher.svelte';
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import config from '$lib/helpers/config';
+  import { config } from '$lib/store/Config';
   import Heading from '$lib/components/Heading.svelte';
   import LangBadge from '$lib/components/LangBadge.svelte';
   import Icon from '$lib/components/Icon.svelte';

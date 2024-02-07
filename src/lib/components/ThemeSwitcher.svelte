@@ -1,6 +1,6 @@
 <script lang="ts">
   import { slide } from 'svelte/transition';
-  import config from '$lib/helpers/config';
+  import { config } from '$lib/store/Config';
   import type { Theme } from '$lib/types/Config';
   import { theme } from '$lib/store/ThemeStore';
   import clickOutside from '$lib/directives/clickOutside';

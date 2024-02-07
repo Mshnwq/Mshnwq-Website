@@ -5,14 +5,14 @@
   import clickOutside from '$lib/directives/clickOutside';
   import { supportedLanguages } from '$lib/helpers/translations';
 
-  let dropdownOpen = false;
+  let dropdownOpenFlag = false;
 
   const toggleDropdown = () => {
-    dropdownOpen = !dropdownOpen;
+    dropdownOpenFlag = !dropdownOpenFlag;
   };
 
   const closeDropdown = () => {
-    dropdownOpen = false;
+    dropdownOpenFlag = false;
   };
 
   const updateLanguage = (newLanguage: Locale) => {
@@ -33,7 +33,7 @@
   {$languageMeta?.flag}
 </button>
 
-{#if dropdownOpen}
+{#if dropdownOpenFlag}
   <ul
     class="theme-switcher"
     transition:slide
