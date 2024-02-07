@@ -1,36 +1,29 @@
-<!-- <nav>
-  <a href="/">Home</a>
-  <a href="/blog">Blog</a>
-  <a href="/contact">contact</a>
-</nav>
-
-<h1>Home page</h1>
-
-<script lang="ts">
-  import { onDestroy, onMount } from 'svelte'
-  onMount(() => console.log('Mounted home page'))
-  onDestroy(() => console.log('Unmounted home page'))
-</script> -->
-
 <script lang="ts">
   
   import { onDestroy, onMount } from 'svelte'
-  import { config } from '$lib/store/BlogStore';
+  import { config } from '$lib/store/Config';
   import Loading from '$lib/components/Loading.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import { socialNetworks } from '$lib/helpers/constants';
   import Icon from '$lib/components/Icon.svelte';
+  import MatrixEffect from '$lib/helpers/matrix-effect';
   import HomePage from './home/HomePage.svelte';
 
   export let data: any;
 
-  const { routeLinks } = config;
-  const homePageLinks = routeLinks.filter((rl: { route: string; }) => rl.route !== '/');
+  const homePageLinks = config.routeLinks.filter((rl: { route: string; }) => rl.route !== '/');
 
   let showLoader = false;
 
-  onMount(() => console.log('Mounted home page'))
-  onDestroy(() => console.log('Unmounted home page'))
+  onMount(() => {
+    console.log('Mounted home page');
+    try { new MatrixEffect(); }
+    catch (e) { console.warn('MatrixEffect failed to load', e); }
+  });
+
+  onDestroy(() => {
+    console.log('Unmounted home page');
+  });
 
   const userSocials = Object.keys(config.contact.socials);
   const limit = config.contact.socialButtonLimit;
@@ -48,19 +41,22 @@
   });
 
   const findRouteColor = (route: string) => {
-    return routeLinks?.find((r: { route: string; }) => r.route === route)?.color || 'var(--accent)';
+    return config.routeLinks?.find((r: { route: string; }) => r.route === route)?.color || 'var(--accent)';
   };
 </script>
 
 <main class="homepage">
+  <div id="matrix-effect"></div>
   <div class="hero">
     <Heading
       level="h1"
       commandStyle={false}
       blinkCursor={true}
-      size="4rem"
-      color="var(--home-accent-background)">Hayan Al-Machnouk</Heading
+      size="4.5rem"
+      color="var(--home-accent-background)"
     >
+      Hayan Al-Machnouk
+    </Heading>
     <div class="socials">
       {#each socialLinks as social}
         {#if social}
@@ -74,7 +70,7 @@
             <Icon
               name={social.icon}
               color="var(--home-accent-background)"
-              width="1.8rem"
+              width="2.4rem"
               height="1.8rem"
               hoverColor={social.tone}
             />
@@ -89,6 +85,7 @@
   {/if}
 
   {#if !showLoader}
+    <!-- TODO: fix height <div id="matrix-effect"></div> -->
     <div class="tiles">
       {#each homePageLinks as navLink}
         <a
@@ -99,10 +96,12 @@
             showLoader = true;
           }}
         >
-          <Heading level="h3" size="2rem" color="var(--home-accent-foreground)"
-            >{navLink.label}</Heading
-          >
-          <p class="subtitle">{navLink.description}</p>
+          <Heading level="h3" size="2.5rem" color="var(--home-accent-foreground)">
+            {navLink.label}
+          </Heading>
+          <p class="subtitle">
+            {navLink.description}
+          </p>
         </a>
       {/each}
     </div>
@@ -115,6 +114,7 @@
 
 <style lang="scss">
   @import '$lib/styles/media-queries.scss';
+  @import '$lib/styles/matrix-effect.scss';
 
   :global(html) {
     scroll-behavior: smooth;
@@ -132,8 +132,8 @@
   .hero {
     text-align: center;
     pointer-events: none;
-    background: var(--home-tile-background);
-    border-bottom: var(--card-border);
+    // background: var(--home-tile-background);
+    // border-bottom: var(--card-border);
     min-height: 30vh;
     display: flex;
     justify-content: center;

@@ -5,13 +5,13 @@
   import Loading from '$lib/components/Loading.svelte';
   import { fade } from 'svelte/transition';
   import { navigating, page } from '$app/stores';
-  import { config } from '$lib/store/BlogStore';
+  import { config } from '$lib/store/Config';
   import { theme, encodedThemeCss, themeColors } from '$lib/store/ThemeStore';
 
-  // Returns page title, based on current route
+  // Returns page title for browser tab, based on current route
   const makeTitle = (pathname: string) => {
     const route = config.routeLinks.find((rl: { route: string; }) => rl.route === pathname);
-    return route ? `${route.label} | ${config.title}` : config.title;
+    return route ? `${config.title} | ${route.label}` : config.title;
   };
 
   // Returns an accent color based on the current route
@@ -24,24 +24,23 @@
     );
   };
 
-  const shouldShowNavBar = (pagePath: string) => !['/', '/index'].includes(pagePath);
+  // Returns if current page should show nav bar
+  const shouldShowNavBar = (pagePath: string) => {
+    return !['/', '/index'].includes(pagePath);
+  }
 </script>
 
 <svelte:head>
   <title>{makeTitle($page.url.pathname)}</title>
   <meta name="color-scheme" content={$theme} />
   <link rel="stylesheet" href={$encodedThemeCss} />
-  {#if config.plausible}
-    <script defer data-domain={config.plausible?.domain}
-        src={config.plausible?.scriptSrc}></script>
-  {/if}
-
+  <!-- TODO: look into this later -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={config.baseUrl} />
   <meta property="twitter:title" content={config.title} />
   <meta property="twitter:description" content={config.description} />
-  <meta property="og:image" content="/preview.png" />
   <meta property="twitter:image" content="/preview.png" />
+  <meta property="og:image" content="/preview.png" />
 </svelte:head>
 
 {#if shouldShowNavBar($page.url.pathname)}
