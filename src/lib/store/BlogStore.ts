@@ -1,10 +1,6 @@
 import { writable, derived, type Readable } from 'svelte/store';
 import type { RssPosts, RssUrlList } from '$lib/types/RssXml';
-import CONFIG from '$lib/helpers/config';
-
 export const blogStore = writable<RssPosts>([]);
-
-export const config = CONFIG;
 
 // Stores the users search term, for filtering posts
 export const searchTerm = writable('');

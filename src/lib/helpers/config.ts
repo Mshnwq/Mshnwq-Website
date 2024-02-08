@@ -10,10 +10,6 @@ const config: SiteConfig = {
   additionalFeeds: [
     { label: 'Notes', url: 'https://notes.aliciasykes.com/feed' },
     {
-      label: 'Dev.to',
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/dev-to.atom',
-    },
-    {
       label: 'BlogSpot',
       url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blogger.atom',
     },
@@ -25,14 +21,13 @@ const config: SiteConfig = {
       label: 'StackOverflow',
       url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/stackoverflow.atom',
     },
-    // { label: 'Twitter', url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/twitter.atom' },
+    { 
+      label: 'Twitter', 
+      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/twitter.atom'
+    },
     {
       label: 'Reddit',
       url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/reddit.atom',
-    },
-    {
-      label: 'Mastodon',
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/mastodon.atom',
     },
     {
       label: 'YouTube',
