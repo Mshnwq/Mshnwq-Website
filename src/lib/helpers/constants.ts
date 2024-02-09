@@ -35,23 +35,11 @@ export const socialNetworks: SocialNetwork[] = [
     link: 'https://stackoverflow.com/users/',
     noAt: true,
   },
-  {
-    name: 'KeyBase',
-    icon: 'keybase',
-    tone: '#33A0FF',
-    link: 'https://keybase.io/',
-    noAt: true,
-  },
-  {
-    name: 'PeerList',
-    icon: 'peerlist',
-    tone: '#00ac43',
-    link: 'https://peerlist.io/',
-  },
-  {
-    name: 'OMG.lol',
-    icon: 'omg-lol',
-    tone: '#ff69ad',
-    link: 'https://omg.lol/',
-  },
+  // {
+  //   name: 'KeyBase',
+  //   icon: 'keybase',
+  //   tone: '#33A0FF',
+  //   link: 'https://keybase.io/',
+  //   noAt: true,
+  // },
 ];

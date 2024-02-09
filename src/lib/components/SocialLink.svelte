@@ -15,6 +15,7 @@
   let hover = false;
 
   const formatUn = (username: string) => {
+    console.log(username);
     return username.startsWith('@') ? username.slice(1) : username;
   };
 

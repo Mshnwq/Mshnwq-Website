@@ -1,8 +1,6 @@
 export const SupportedSocials: readonly string[] = [
   'Twitter',
   'GitHub',
-  'Dev.to',
-  'Mastodon',
   'LinkedIn',
   'Instagram',
   'YouTube',

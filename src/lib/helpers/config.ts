@@ -419,12 +419,12 @@ const config: SiteConfig = {
     socials: {
       Twitter: 'mshnwq00',
       GitHub: 'Mshnwq',
-      LinkedIn: 'in/hayan-al-machnouk/',
+      LinkedIn: 'in/hayan-al-machnouk',
       Reddit: 'mshnwq',
       StackOverflow: '21552622/mshnwq',
-      // 'OMG.lol': 'alicia',
+      // KeyBase: 'AliciaSykes',
     },
-    socialButtonLimit: 6,
+    socialButtonLimit: 2,
     mailerConfig: {
       service_id: 'gmail',
       template_id: 'website-contact-form',
