@@ -70,14 +70,16 @@
     swift: { name: 'Swift', color: 'F05138', icon: 'swift' },
     typescript: { name: 'TypeScript', color: '3178C6', icon: 'typescript' },
     vue: { name: 'Vue.js', color: '4FC08D', icon: 'vuedotjs' },
+    verilog: { name: 'Verilog', color: '4FC08D', icon: 'vuedotjs' },
     webassembly: { name: 'WebAssembly', color: '654FF0', icon: 'webassembly' },
 
     // DevOps
     ansible: { name: 'Ansible', color: 'EE0000', icon: 'ansible' },
     kubernetes: { name: 'Kubernetes', color: '326CE5', icon: 'kubernetes' },
     githubactions: { name: 'GitHub Actions', color: '2088FF', icon: 'githubactions' },
-    prometheus: { name: 'Prometheus', color: 'E6522C', icon: 'prometheus' },
     grafana: { name: 'Grafana', color: 'F46800', icon: 'grafana' },
+    prometheus: { name: 'Prometheus', color: 'E6522C', icon: 'prometheus' },
+    influxdb: { name: 'Influx DB', color: 'E6522C', icon: 'influx' },
 
     // Cloud
     netlify: { name: 'Netlify', color: '00C7B7', icon: 'netlify' },
@@ -105,6 +107,8 @@
 
     // Security
     nmap: { name: 'Nmap', color: '4F5D95', icon: 'nmap' },
+    crowdsec: { name: 'Crowdsec', color: '4F5D95', icon: 'crowdsec' },
+    authelia: { name: 'Authelia', color: '4F5D95', icon: 'authelia' },
     owaspzap: { name: 'OWASP ZAP', color: '4B8BBE', icon: 'owasp' },
     burpsuite: { name: 'Burp Suite', color: 'FAC748', icon: 'burpsuite' },
     wireshark: { name: 'Wireshark', color: '1679A7', icon: 'wireshark' },
@@ -121,6 +125,7 @@
     graphql: { name: 'GraphQL', color: 'E10098', icon: 'graphql' },
 
     // Servers
+    ubuntu: { name: 'Ubuntu', color: 'A81D33', icon: 'ubuntu' },
     debian: { name: 'Debian', color: 'A81D33', icon: 'debian' },
     gitlab: { name: 'GitLab', color: 'FC6D26', icon: 'gitlab' },
 
@@ -143,6 +148,11 @@
     harmony: { name: 'Harmony', color: 'FFC300', icon: 'harmony' },
     opensea: { name: 'OpenSea', color: '2081E2', icon: 'opensea' },
     web3js: { name: 'Web3.js', color: 'F16822', icon: 'web3dotjs' },
+
+    // Networking
+    headscale: { name: 'Headscale', color: 'FFC300', icon: 'harmony' },
+    tailscale: { name: 'Tailscale', color: '2081E2', icon: 'opensea' },
+    nginxproxymanager: { name: 'Nginx Proxy Manager', color: 'F16822', icon: 'web3dotjs' },
   };
 
   // Check if hex code of badge is very pale, so we can use black icon instead
