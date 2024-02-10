@@ -1,4 +1,4 @@
-export type Locale = 'en' | 'fr';
+export type Locale = 'en' | 'fr' | 'de' | 'es' | 'no' | 'se' | 'nl' | 'ro' | 'ru' | 'pl' | 'it'; 
 
 export type Translations = {
   [key in Locale]: {
