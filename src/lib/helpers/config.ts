@@ -6,9 +6,16 @@ const config: SiteConfig = {
   description: '',
   source: 'https://github.com/mshnwq/mshnwq-website',
   baseUrl: 'https://mshnwq.com',
-  initialFeeds: [{ label: 'Notes', url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blog.atom' }],
+  initialFeeds: [
+    { 
+      label: 'Notes', 
+      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blog.atom' 
+    }
+  ],
   additionalFeeds: [
-    { label: 'Notes', url: 'https://notes.aliciasykes.com/feed' },
+    { 
+      label: 'Notes', 
+      url: 'https://notes.aliciasykes.com/feed' },
     {
       label: 'BlogSpot',
       url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blogger.atom',
@@ -34,7 +41,6 @@ const config: SiteConfig = {
       url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/youtube.atom',
     },
   ],
-
   routeLinks: [
     { label: 'Home',
       route: '/',
@@ -46,8 +52,8 @@ const config: SiteConfig = {
       description: 'Published articles, notes, tutorials and updates',
     },
     {
-      label: 'Projects',
-      route: '/projects',
+      label: 'Works',
+      route: '/works',
       color: 'var(--accent-3, #01c0f0)',
       description: 'Personal projects and open source work',
     },
@@ -424,7 +430,7 @@ const config: SiteConfig = {
       StackOverflow: '21552622/mshnwq',
       // KeyBase: 'AliciaSykes',
     },
-    socialButtonLimit: 2,
+    socialButtonLimit: 6,
     mailerConfig: {
       service_id: 'gmail',
       template_id: 'website-contact-form',
@@ -488,8 +494,7 @@ const config: SiteConfig = {
       <a href="https://github.com/lissy93/dotfiles">dotfiles setup</a> which I'm always tweaking.
       And I have a small homelab, that I'm using to learn more about system administration,
       and host my own services to (attempt to) escape big tech.
-      I made <a href="https://github.com/Lissy93/dashy">dashboard app</a> for it.
-      `,
+      I made <a href="https://github.com/Lissy93/dashy">dashboard app</a> for it.`,
 
       `For work, I'm a principal software engineer at <a href="https://and.digital/">AND.Digital</a>,
       where I work across various client projects, help to upskill and mentor junior and mid-level
@@ -502,128 +507,83 @@ const config: SiteConfig = {
   techStack: {
     backend: [
       {
-        language: 'Rust',
-        projects: ['AdGuardian-Term'],
+        language: 'Python',
+        projects: ['RFID', 'Hotel'],
       },
       {
         language: 'Go',
-        projects: ['who-dat', 'go-apod', 'OLD_AdGuardian-Term'],
-      },
-      {
-        language: 'Node',
-        projects: [' twitter-sentiment-visualisation', 'quick-example-of-testing-in-nodejs'],
-      },
-      {
-        language: 'Python',
-        projects: ['portainer-templates', 'gh-trending-no-cors', 'tfl-lift-availability-dash', 'pax'],
+        projects: ['Endpoint Router'],
       },
       {
         language: 'Java',
-        projects: ['Minesweper', 'AlternativeVoteSystem', 'TuneSender', 'TreasureHunt'],
-      },
-      {
-        language: 'PHP',
-        projects: [ 'revision-quizzes', 'intern-magnet', 'usermonkey' ],
+        projects: ['Chess'],
       },
     ],
     frontend: [
       {
-        language: 'Vue',
-        projects: ['dashy', 'all-the-countries', 'alicia-sykes-website', 'tfl-lift-availability-dash'],
-      },
-      {
         language: 'Svelte',
-        projects: ['my-website', 'cheat-code'],
+        projects: ['my-website'],
       },
       {
-        language: 'React',
+        language: 'QT',
         projects: ['web-check'],
-      },
-      {
-        language: 'Solid',
-        projects: ['cso'],
-      },
-      {
-        language: 'Angular',
-        projects: ['happy-app', 'realtime-speech-analytics'],
-      },
-      {
-        language: 'Astro',
-        projects: ['git-into-open-source'],
-      },
-      {
-        language: 'D3',
-        projects: ['twitter-sentiment-visualisation', 'happy-app', 'realtime-speech-analytics'],
-      },
-      {
-        language: 'Alpine',
-        projects: ['who-dat'],
-      },
-      {
-        language: 'CoffeeScript',
-        projects: ['sentiment-analysis'],
-      },
-      {
-        language: 'HTML',
-        projects: ['repo-badge-maker ', 'bullet-convertor', 'md-toc-generator', 'email-extractor', 'cyber-defence-presentation', 'web-dev-school', 'md-cv-maker'],
-      },
-    ],
-    mobile: [
-      {
-        language: 'Swift',
-        projects: ['hasami-shogi', 'Spotter'],
-      },
-      {
-        language: 'Kotlin',
-        projects: ['anti-theft-charge'],
       },
       {
         language: 'Flutter',
         projects: ['nfu'],
       },
+    ],
+    hardware: [
       {
-        language: 'Android',
-        projects: ['Minesweper', 'anti-theft-charge', 'TuneSender', 'TreasureHunt', 'got-home-safe', 'Study-Time'],
+        language: 'C++',
+        projects: ['nfu'],
       },
-      // {
-      //   language: 'React Native',
-      //   projects: [''],
-      // },
+      {
+        language: 'Verilog',
+        projects: ['nfu'],
+      },
+      {
+        language: 'Assembly',
+        projects: ['nfu'],
+      },
     ],
     other: [
       {
         language: 'Bash',
-        projects: ['minimal-terminal-prompt'],
+        projects: ['dotfiles'],
       },
       {
         language: 'Docker',
-        projects: ['docker-tcpdump', 'dashy'],
+        projects: ['', 'dashy'],
       },
       {
         language: 'Config',
-        projects: ['dotfiles', 'espanso-config', 'conky-system-stats-widget', 'Brewfile'],
+        projects: ['dotfiles'],
       },
       {
         language: 'Markdown',
-        projects: ['personal-security-checklist', 'awesome-privacy'],
+        projects: ['personal-security-checklist'],
       },
     ],
   },
   techStackExtras: {
     devOps: [
-      'Ansible', 'Kubernetes', 'Prometheus', 'GitHubActions', 'Grafana',
+      'Ansible', 'Kubernetes', 'GitHubActions', 'Prometheus', 'Grafana', 'Influx'
     ],
     cloud: [
-      'Netlify', 'Vercel', 'CloudFlare', 'Azure', 'AWS', 'GCP',
+      'Ubuntu', 'CloudFlare', 'Azure', 'AWS', 'GCP',
     ],
     databases: [
-      'PostgreSQL', 'SQLite', 'Redis','MySQL', 'MongoDB',
+      'PostgreSQL', 'SQLite', 'Redis', 'MySQL',
     ],
     testing: [
-      'Jest', 'Puppeteer', 'Enzyme', 'Cypress',
+      'Jest', 'Puppeteer', 'Cypress',
     ],
     security: [
-      'Nmap', 'OWASPZAP', 'BurpSuite', 'Wireshark',
+      'Crowdsec', 'Authelia', 'Nmap', 'Maltego', 'Wireshark',
+    ],
+    networking: [
+      'Headscale', 'Tailscale', 'NginxProxyManager',
     ],
   },
 };
