@@ -6,7 +6,7 @@
   // import AboutSection from './parts/About.svelte';
   // import TechStackSection from './parts/TechStackSection.svelte';
   
-  export let data: any;
+  // export let data: any;
   
   </script>
 
