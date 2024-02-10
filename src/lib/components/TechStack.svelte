@@ -8,7 +8,6 @@
   const techStackExtras = Object.keys(config.techStackExtras);
 
   export let accent = 'var(--accent)';
-
 </script>
   
 <section class="tech-stack-section" style="--accent:{accent};">
