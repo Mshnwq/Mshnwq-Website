@@ -9,57 +9,57 @@
 
   export let accent = 'var(--accent)';
 
-  </script>
+</script>
   
-  <section class="tech-stack-section" style="--accent:{accent};">
-    <Heading level="h2">Tech Stack</Heading>
-    <p class="sub-info">
-      Usually the tools I use for the job, depend on the job.
-      There's no one-size fits all, and as such I'm always trying out new technologies, and constantly learning.
-    </p>
-    <p class="sub-info">
-      The following technologies are the ones I'm most familiar with, and I've linked to code that I've written with each.
-    </p>
-    <div class="stack-table">
-      {#each techStacks as stackName}
+<section class="tech-stack-section" style="--accent:{accent};">
+  <Heading level="h2">Tech Stack</Heading>
+  <p class="sub-info">
+    The tools I use for the job, depend on the job.
+    There's no one-size fits all, and as such I'm always trying out new technologies, and constantly learning.
+  </p>
+  <p class="sub-info">
+    The following technologies are the ones I'm most familiar with, and I've linked to code that I've written with each.
+  </p>
+  <div class="stack-table">
+    {#each techStacks as stackName}
+    <div class="stack-name">
+      <h4>{stackName}</h4>
+    </div>
+    <div class="stack-section">
+      {#each config.techStack[stackName] as ts}
+        <div class="stack-row">
+          <div class="stack-label">
+            <LangBadge language={ts.language} size={20} />
+          </div>
+          <div class="stack-projects">
+            {#each ts.projects as project}
+              <a class="repo-link" target="_blank" rel="noreferrer"
+                href="https://github.com/{config.githubUser}/{project}">
+                <Icon name="github2" size={20} />
+                <span>{project}</span>
+              </a>
+            {/each}
+          </div>
+        </div>
+      {/each}
+    </div>
+    {/each}
+  </div>
+  <div class="stack-table stack-extras">
+    {#each techStackExtras as stackName}
       <div class="stack-name">
         <h4>{stackName}</h4>
       </div>
-      <div class="stack-section">
-        {#each config.techStack[stackName] as ts}
-          <div class="stack-row">
-            <div class="stack-label">
-              <LangBadge language={ts.language} size={20} />
-            </div>
-            <div class="stack-projects">
-              {#each ts.projects as project}
-                <a class="repo-link" target="_blank" rel="noreferrer"
-                  href="https://github.com/{config.githubUser}/{project}">
-                  <Icon name="github2" size={20} />
-                  <span>{project}</span>
-                </a>
-              {/each}
-            </div>
-          </div>
+      <div class="stack-extras-tech">
+        {#each config.techStackExtras[stackName] as technology}
+          <LangBadge language={technology} size={20} />
         {/each}
       </div>
-      {/each}
-    </div>
-    <div class="stack-table stack-extras">
-      {#each techStackExtras as stackName}
-        <div class="stack-name">
-          <h4>{stackName}</h4>
-        </div>
-        <div class="stack-extras-tech">
-          {#each config.techStackExtras[stackName] as technology}
-            <LangBadge language={technology} size={20} />
-          {/each}
-        </div>
-      {/each}
-    </div>
-  </section>
+    {/each}
+  </div>
+</section>
   
-  <style lang="scss">
+<style lang="scss">
   .tech-stack-section {
     .buttons {
       display: flex;
