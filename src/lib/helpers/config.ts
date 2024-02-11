@@ -52,8 +52,8 @@ const config: SiteConfig = {
       description: 'Published articles, notes, tutorials and updates',
     },
     {
-      label: 'Works',
-      route: '/works',
+      label: 'Projects',
+      route: '/projects',
       color: 'var(--accent-3, #01c0f0)',
       description: 'Personal projects and open source work',
     },

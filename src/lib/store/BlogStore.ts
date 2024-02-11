@@ -1,6 +1,16 @@
 import { writable, derived, type Readable } from 'svelte/store';
 import type { RssPosts, RssUrlList } from '$lib/types/RssXml';
 export const blogStore = writable<RssPosts>([]);
+import config from '$lib/helpers/config';
+
+// List of RSS feeds to fetch + show on load
+export const initialFeeds: RssUrlList = config.initialFeeds;
+
+// List of extra feeds, that can be enabled through the UI
+export const extraFeeds: RssUrlList = config.additionalFeeds;
+
+// Set the RSS feed URLs to display, to initialFeeds
+export const rssFeedUrls = writable<RssUrlList>(initialFeeds);
 
 // Stores the users search term, for filtering posts
 export const searchTerm = writable('');
