@@ -5,8 +5,8 @@
 
   import SocialLink from '$lib/components/SocialLink.svelte';
   import Heading from '$lib/components/Heading.svelte';
-  import EmailForm from './EmailForm.svelte';
-  import PGPKeys from './PgpKeys.svelte';
+  import EmailForm from '$lib/components/EmailForm.svelte';
+  import PGPKeys from '$lib/components/PgpKeys.svelte';
 
   // Dynamically fetched data (social metrics)
   export let data;
