@@ -1,7 +1,7 @@
 <script lang="ts">
-import config from '$lib/helpers/config';
-import Heading from '$lib/components/Heading.svelte';
-import LinkButton from '$lib/components/LinkButton.svelte';
+import config from '$src/helpers/config';
+import Heading from '$src/components/Heading.svelte';
+import LinkButton from '$src/components/LinkButton.svelte';
 
 export let accent = 'var(--accent)';
 </script>
@@ -27,7 +27,7 @@ export let accent = 'var(--accent)';
 </section>
 
 <style lang="scss">
-@import '$lib/styles/media-queries.scss';
+@import '$src/styles/media-queries.scss';
 .about-section {
   @include tablet-down {
     width: 100vw;

@@ -1,9 +1,9 @@
 <script lang="ts">
-  import config from '$lib/helpers/config';
-  import Heading from '$lib/components/Heading.svelte';
-  import LinkButton from '$lib/components/LinkButton.svelte';
-  import LangBadge from '$lib/components/LangBadge.svelte';
-  import Icon from '$lib/components/Icon.svelte';
+  import config from '$src/helpers/config';
+  import Heading from '$src/components/Heading.svelte';
+  import LinkButton from '$src/components/LinkButton.svelte';
+  import LangBadge from '$src/components/LangBadge.svelte';
+  import Icon from '$src/components/Icon.svelte';
 
   const techStacks = Object.keys(config.techStack);
   const extraStacks = Object.keys(config.techStackExtras);
@@ -71,7 +71,7 @@
   </section>
   
   <style lang="scss">
-  @import '$lib/styles/media-queries.scss';
+  @import '$src/styles/media-queries.scss';
   .tech-stack-section {
     --transition:  0.3s 0.1s all ease-in-out;
     @include tablet-down {

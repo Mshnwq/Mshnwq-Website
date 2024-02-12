@@ -19,7 +19,7 @@
 </div>
 
 <style lang="scss">
-  @import '$lib/styles/media-queries.scss';
+  @import '$src/styles/media-queries.scss';
 
   .index-page {
     display: grid;

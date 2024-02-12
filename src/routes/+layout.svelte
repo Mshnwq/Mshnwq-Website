@@ -1,12 +1,12 @@
 <script lang="ts">
-  import BackToTop from '$lib/components/BackToTop.svelte';
-  import NavBar from '$lib/components/NavBar.svelte';
-  import Footer from '$lib/components/Footer.svelte';
-  import Loading from '$lib/components/Loading.svelte';
+  import BackToTop from '$src/components/BackToTop.svelte';
+  import NavBar from '$src/components/NavBar.svelte';
+  import Footer from '$src/components/Footer.svelte';
+  import Loading from '$src/components/Loading.svelte';
   import { fade } from 'svelte/transition';
   import { navigating, page } from '$app/stores';
-  import { config } from '$lib/store/Config';
-  import { theme, encodedThemeCss, themeColors } from '$lib/store/ThemeStore';
+  import { config } from '$src/store/Config';
+  import { theme, encodedThemeCss, themeColors } from '$src/store/ThemeStore';
 
   // Returns page title for browser tab, based on current route
   const makeTitle = (pathname: string) => {
@@ -67,10 +67,10 @@
 
 <style lang="scss">
   // Import reused SCSS variables and global styles
-  @import '$lib/styles/color-palette.scss';
-  @import '$lib/styles/media-queries.scss';
-  @import '$lib/styles/typography.scss';
-  @import '$lib/styles/dimensions.scss';
+  @import '$src/styles/color-palette.scss';
+  @import '$src/styles/media-queries.scss';
+  @import '$src/styles/typography.scss';
+  @import '$src/styles/dimensions.scss';
 
   main {
     min-height: 100%;

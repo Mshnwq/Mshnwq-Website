@@ -1,8 +1,8 @@
 <script lang="ts">
-import Heading from '$lib/components/Heading.svelte';
-import LinkButton from '$lib/components/LinkButton.svelte';
-import { slugify, formatDate } from '$lib/helpers/post-utils';
-import type { RssPosts } from '$lib/types/RssXml';
+import Heading from '$src/components/Heading.svelte';
+import LinkButton from '$src/components/LinkButton.svelte';
+import { slugify, formatDate } from '$src/helpers/post-utils';
+import type { RssPosts } from '$src/types/RssXml';
 
 export let posts: RssPosts;
 
@@ -36,7 +36,7 @@ export let accent = 'var(--accent)';
   </section>
 
 <style lang="scss">
-  @import '$lib/styles/media-queries.scss';
+  @import '$src/styles/media-queries.scss';
 
   section {
     margin: 1rem auto;

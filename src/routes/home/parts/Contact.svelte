@@ -1,10 +1,10 @@
 <script lang="ts">
-import config from '$lib/helpers/config';
-import Heading from '$lib/components/Heading.svelte';
-import LinkButton from '$lib/components/LinkButton.svelte';
-import SocialLink from '$lib/components/SocialLink.svelte';
-import { socialNetworks } from '$lib/helpers/constants';
-import type { SupportedSocials, UserSocial } from '$lib/types/Socials';
+import config from '$src/helpers/config';
+import Heading from '$src/components/Heading.svelte';
+import LinkButton from '$src/components/LinkButton.svelte';
+import SocialLink from '$src/components/SocialLink.svelte';
+import { socialNetworks } from '$src/helpers/constants';
+import type { SupportedSocials, UserSocial } from '$src/types/Socials';
 
 export let accent = 'var(--accent)';
 
@@ -55,7 +55,7 @@ const toggleSocialLimit = () => {
 </section>
     
   <style lang="scss">
-  @import '$lib/styles/media-queries.scss';
+  @import '$src/styles/media-queries.scss';
 
   section {
     margin: 1rem auto;

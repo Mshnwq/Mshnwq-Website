@@ -1,8 +1,8 @@
 import { get } from 'svelte/store';
 import type { PageServerLoad } from './$types';
-import { blogStore, rssFeedUrls } from '$lib/store/BlogStore';
-import { fetchPostsFromRss } from '$lib/helpers/fetch-rss-posts';
-import { type RssPost, PostStatus, type RssUrlList } from '$lib/types/RssXml';
+import { blogStore, rssFeedUrls } from '$src/store/BlogStore';
+import { fetchPostsFromRss } from '$src/helpers/fetch-rss-posts';
+import { type RssPost, PostStatus, type RssUrlList } from '$src/types/RssXml';
 
 export const _loadPosts = (fetch?: (() => Promise<Response>),  feeds?: RssUrlList) => {
   let fetchStatus: PostStatus = PostStatus.Loading;

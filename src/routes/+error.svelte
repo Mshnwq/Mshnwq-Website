@@ -1,6 +1,6 @@
 <script>
   import { page } from '$app/stores';
-  import LinkButton from '$lib/components/LinkButton.svelte';
+  import LinkButton from '$src/components/LinkButton.svelte';
 
   const emojis = {
     // TODO add the rest!

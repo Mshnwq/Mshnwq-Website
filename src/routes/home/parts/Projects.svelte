@@ -1,10 +1,10 @@
 <script lang="ts">
-import config from '$lib/helpers/config';
-import Heading from '$lib/components/Heading.svelte';
-import Icon from '$lib/components/Icon.svelte';
-import LangBadge from '$lib/components/LangBadge.svelte';
-import LinkButton from '$lib/components/LinkButton.svelte';
-import type { Project } from '$lib/types/Project';
+import config from '$src/helpers/config';
+import Heading from '$src/components/Heading.svelte';
+import Icon from '$src/components/Icon.svelte';
+import LangBadge from '$src/components/LangBadge.svelte';
+import LinkButton from '$src/components/LinkButton.svelte';
+import type { Project } from '$src/types/Project';
 
 export let projects: Project[];
 export let accent = 'var(--accent)';
@@ -78,7 +78,7 @@ let projectCount = 20;
   </section>
 
 <style lang="scss">
-@import '$lib/styles/media-queries.scss';
+@import '$src/styles/media-queries.scss';
 
 section {
   margin: 1rem auto;

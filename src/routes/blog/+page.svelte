@@ -1,19 +1,19 @@
 <script lang="ts">
   import { goto } from '$app/navigation';
-  import { t } from '$lib/store/Language';
+  import { t } from '$src/store/Language';
   import {
     blogStore,
     filtered,
     searchTerm,
     rssFeedUrls,
-  } from '$lib/store/BlogStore';
-  import { slugify, formatDate } from '$lib/helpers/post-utils';
-  import { PostStatus, type RssPost } from '$lib/types/RssXml';
-  import SearchBar from '$lib/components/SearchBar.svelte';
-  import Loading from '$lib/components/Loading.svelte';
-  import DropDown from '$lib/components/DropDown.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import AnimateOnScroll from '$lib/components/AnimateOnScroll.svelte';
+  } from '$src/store/BlogStore';
+  import { slugify, formatDate } from '$src/helpers/post-utils';
+  import { PostStatus, type RssPost } from '$src/types/RssXml';
+  import SearchBar from '$src/components/SearchBar.svelte';
+  import Loading from '$src/components/Loading.svelte';
+  import DropDown from '$src/components/DropDown.svelte';
+  import Heading from '$src/components/Heading.svelte';
+  import AnimateOnScroll from '$src/components/AnimateOnScroll.svelte';
 
   export let data;
 
@@ -149,8 +149,8 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <style lang="scss">
-  @import '$lib/styles/color-palette.scss';
-  @import '$lib/styles/dimensions.scss';
+  @import '$src/styles/color-palette.scss';
+  @import '$src/styles/dimensions.scss';
 
   .heading {
     margin: 0 calc(5vw + 1rem);

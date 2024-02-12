@@ -1,12 +1,12 @@
 <script lang="ts">
-  import type { SupportedSocials, UserSocial } from '$lib/types/Socials';
-  import { socialNetworks } from '$lib/helpers/constants';
-  import { config } from '$lib/store/Config';
+  import type { SupportedSocials, UserSocial } from '$src/types/Socials';
+  import { socialNetworks } from '$src/helpers/constants';
+  import { config } from '$src/store/Config';
 
-  import SocialLink from '$lib/components/SocialLink.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import EmailForm from '$lib/components/EmailForm.svelte';
-  import PGPKeys from '$lib/components/PgpKeys.svelte';
+  import SocialLink from '$src/components/SocialLink.svelte';
+  import Heading from '$src/components/Heading.svelte';
+  import EmailForm from '$src/components/EmailForm.svelte';
+  import PGPKeys from '$src/components/PgpKeys.svelte';
 
   // Dynamically fetched data (social metrics)
   export let data;

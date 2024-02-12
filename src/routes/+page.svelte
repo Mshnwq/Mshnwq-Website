@@ -1,12 +1,12 @@
 <script lang="ts">
   
   import { onDestroy, onMount } from 'svelte'
-  import { config } from '$lib/store/Config';
-  import Loading from '$lib/components/Loading.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import { socialNetworks } from '$lib/helpers/constants';
-  import Icon from '$lib/components/Icon.svelte';
-  import MatrixEffect from '$lib/helpers/matrix-effect';
+  import { config } from '$src/store/Config';
+  import Loading from '$src/components/Loading.svelte';
+  import Heading from '$src/components/Heading.svelte';
+  import { socialNetworks } from '$src/helpers/constants';
+  import Icon from '$src/components/Icon.svelte';
+  import MatrixEffect from '$src/helpers/matrix-effect';
   import HomePage from './home/HomePage.svelte';
 
   export let data: any;
@@ -16,7 +16,6 @@
   let showLoader = false;
 
   onMount(() => {
-    console.log('Mounted home page');
     try { new MatrixEffect(); }
     catch (e) { console.warn('MatrixEffect failed to load', e); }
   });
@@ -113,8 +112,8 @@
 <!-- TODO: HomePage -->
 
 <style lang="scss">
-  @import '$lib/styles/media-queries.scss';
-  @import '$lib/styles/matrix-effect.scss';
+  @import '$src/styles/media-queries.scss';
+  @import '$src/styles/matrix-effect.scss';
 
   :global(html) {
     scroll-behavior: smooth;

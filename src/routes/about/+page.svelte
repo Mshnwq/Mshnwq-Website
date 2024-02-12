@@ -1,11 +1,11 @@
 <script lang="ts">
-  import Heading from '$lib/components/Heading.svelte';
-  import TechStack from '$lib/components/TechStack.svelte';
-  import WorkExperience from '$lib/components/WorkExperience.svelte';
-  // import Icon from '$lib/components/Icon.svelte';
-  import { socialNetworks } from '$lib/helpers/constants';
-  import { t } from '$lib/store/Language';
-  import { config } from '$lib/store/Config';
+  import Heading from '$src/components/Heading.svelte';
+  import TechStack from '$src/components/TechStack.svelte';
+  import WorkExperience from '$src/components/WorkExperience.svelte';
+  // import Icon from '$src/components/Icon.svelte';
+  import { socialNetworks } from '$src/helpers/constants';
+  import { t } from '$src/store/Language';
+  import { config } from '$src/store/Config';
 
   const { intro, bio, picture } = config.about;
 
@@ -89,7 +89,7 @@
 </div>
 
 <style lang="scss">
-  @import '$lib/styles/media-queries.scss';
+  @import '$src/styles/media-queries.scss';
 
   .heading {
     margin: 1rem calc(5vw + 1rem) 0;

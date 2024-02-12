@@ -1,6 +1,6 @@
 <script lang="ts">
-  import config from '$lib/helpers/config';
-  import Heading from '$lib/components/Heading.svelte';
+  import config from '$src/helpers/config';
+  import Heading from '$src/components/Heading.svelte';
 </script>
 
 <a href={config.contact.website} class="title-link" title="Go to {config.contact.website}">

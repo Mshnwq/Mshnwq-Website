@@ -1,17 +1,17 @@
 <script lang="ts">
   import { get } from 'svelte/store';
   import { goto } from '$app/navigation';
-  import type { RssPost, RssPosts, RssUrlList } from '$lib/types/RssXml';
-  import { PostStatus } from '$lib/types/RssXml';
-  import { blogStore, rssFeedUrls, extraFeeds } from '$lib/store/BlogStore';
-  import { slugify, formatDate } from '$lib/helpers/post-utils';
+  import type { RssPost, RssPosts, RssUrlList } from '$src/types/RssXml';
+  import { PostStatus } from '$src/types/RssXml';
+  import { blogStore, rssFeedUrls, extraFeeds } from '$src/store/BlogStore';
+  import { slugify, formatDate } from '$src/helpers/post-utils';
   import type { PageData } from './$types';
-  import ArticleContent from '$lib/components/ArticleContent.svelte';
-  import NotFound from '$lib/components/NotFound.svelte';
-  import Loading from '$lib/components/Loading.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import { fetchPostsFromRss } from '$lib/helpers/fetch-rss-posts';
-  import config from '$lib/helpers/config';
+  import ArticleContent from '$src/components/ArticleContent.svelte';
+  import NotFound from '$src/components/NotFound.svelte';
+  import Loading from '$src/components/Loading.svelte';
+  import Heading from '$src/components/Heading.svelte';
+  import { fetchPostsFromRss } from '$src/helpers/fetch-rss-posts';
+  import config from '$src/helpers/config';
 
   export let data: PageData; // Svelte data about current page
 

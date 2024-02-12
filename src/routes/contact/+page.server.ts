@@ -1,6 +1,6 @@
 import { SECRET_TWITTER_TOKEN, SECRET_GITHUB_TOKEN } from '$env/static/private';
-import type { SocialMetric } from '$lib/types/Socials';
-import { config } from '$lib/store/Config';
+import type { SocialMetric } from '$src/types/Socials';
+import { config } from '$src/store/Config';
 
 export const prerender = true;
 
