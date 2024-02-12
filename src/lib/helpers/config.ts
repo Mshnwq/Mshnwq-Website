@@ -51,12 +51,12 @@ const config: SiteConfig = {
       color: 'var(--accent-2, #b45eff)',
       description: 'Published articles, notes, tutorials and updates',
     },
-    {
-      label: 'Projects',
-      route: '/projects',
-      color: 'var(--accent-3, #01c0f0)',
-      description: 'Personal projects and open source work',
-    },
+    // {
+    //   label: 'Projects',
+    //   route: '/projects',
+    //   color: 'var(--accent-3, #01c0f0)',
+    //   description: 'Personal projects and open source work',
+    // },
     {
       label: 'Contact',
       route: '/contact',
