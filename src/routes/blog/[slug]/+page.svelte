@@ -11,7 +11,7 @@
   import Loading from '$src/components/Loading.svelte';
   import Heading from '$src/components/Heading.svelte';
   import { fetchPostsFromRss } from '$src/helpers/fetch-rss-posts';
-  import config from '$src/helpers/config';
+  import { config } from '$src/store/Config';
 
   export let data: PageData; // Svelte data about current page
 
@@ -68,7 +68,7 @@
     else if (postStatus === PostStatus.Loading) title = 'Loading Post';
     else if (postStatus === PostStatus.NotFound) title = 'Post not Found';
     else if (postStatus === PostStatus.Errored) title = 'Error';
-    return `${title} | Alicia Sykes's Blog`;
+    return `${title} | Mshnwq's Blog`;
   };
 
   const makeDescription = () => {
