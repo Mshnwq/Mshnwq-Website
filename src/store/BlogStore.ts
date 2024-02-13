@@ -1,7 +1,8 @@
 import { writable, derived, type Readable } from 'svelte/store';
 import type { RssPosts, RssUrlList } from '$src/types/RssXml';
-export const blogStore = writable<RssPosts>([]);
 import config from '$src/helpers/config';
+
+export const blogStore = writable<RssPosts>([]);
 
 // List of RSS feeds to fetch + show on load
 export const initialFeeds: RssUrlList = config.initialFeeds;
