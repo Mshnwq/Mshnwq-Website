@@ -8,37 +8,26 @@ const config: SiteConfig = {
   baseUrl: 'https://mshnwq.com',
   initialFeeds: [
     { 
-      label: 'Notes', 
+      label: 'Blog', 
       url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blog.atom' 
     }
   ],
   additionalFeeds: [
     { 
-      label: 'Notes', 
-      url: 'https://notes.aliciasykes.com/feed' },
-    {
-      label: 'BlogSpot',
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blogger.atom',
+      label: 'Blog', 
+      url: 'https://blog.mshnwq.com/feed'
     },
     {
       label: 'GitHub',
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/github.atom',
-    },
-    {
-      label: 'StackOverflow',
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/stackoverflow.atom',
+      url: 'https://raw.githubusercontent.com/Mshnwq/feeds/main/github.atom',
     },
     { 
       label: 'Twitter', 
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/twitter.atom'
-    },
-    {
-      label: 'Reddit',
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/reddit.atom',
+      url: 'https://raw.githubusercontent.com/Mshnwq/feeds/main/twitter.atom'
     },
     {
       label: 'YouTube',
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/youtube.atom',
+      url: 'https://raw.githubusercontent.com/Mshnwq/feeds/main/youtube.atom',
     },
   ],
   routeLinks: [
@@ -58,16 +47,16 @@ const config: SiteConfig = {
     //   description: 'Personal projects and open source work',
     // },
     {
-      label: 'Contact',
-      route: '/contact',
-      color: 'var(--accent-1, #ff0099)',
-      description: 'Social profile links, GPG keys and contact form',
-    },
-    {
       label: 'About',
       route: '/about',
       color: 'var(--accent-4, #1de691)',
       description: 'Bio and professional experience',
+    },
+    {
+      label: 'Contact',
+      route: '/contact',
+      color: 'var(--accent-1, #ff0099)',
+      description: 'Social profile links, GPG keys and contact form',
     },
   ],
   footerInfo: {
