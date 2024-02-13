@@ -154,10 +154,10 @@
   .tiles {
     display: grid;
     grid-auto-flow: dense;
-    max-width: 70rem;
+    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    max-width: 50rem;
     margin: auto;
     padding: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
     width: 80vw;
     @include tablet-down {
@@ -165,6 +165,10 @@
       flex-direction: column;
     }
     a.tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       color: var(--foreground);
       border: var(--card-border);
       background: var(--card-background);
@@ -175,12 +179,13 @@
       transition: all ease-in-out 0.25s, transform ease-in-out 0.3s;
       overflow: hidden;
       pointer-events: all;
+      margin-bottom: 0.5rem;
 
       p.subtitle {
         position: absolute;
         color: var(--dimmed-text);
         margin: 0;
-        transform: translateX(-20rem) translateY(2rem) scale(0.5) rotate(5deg);
+        transform: translateX(0rem) translateY(2rem) scale(0.5) rotate(5deg);
         transition: all ease-in-out 0.2s;
         opacity: 0;
       }
@@ -193,7 +198,7 @@
         border-left-width: 8px;
         transform: scale(1.035);
         p.subtitle {
-          transform: translateX(0) translateY(-1.5rem) scale(1) rotate(0);
+          transform: translateX(0) translateY(2rem) scale(1) rotate(0);
           opacity: 1;
         }
       }
