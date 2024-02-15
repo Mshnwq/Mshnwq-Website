@@ -4,7 +4,7 @@ const config: SiteConfig = {
   title: 'Hayan Al-Machnouk',
   nickname: 'Mshnwq',
   description: '',
-  source: 'https://github.com/mshnwq/mshnwq-website',
+  source: 'https://github.com/Mshnwq/mshnwq-website',
   baseUrl: 'https://mshnwq.com',
   initialFeeds: [
     { 
@@ -64,7 +64,7 @@ const config: SiteConfig = {
     authorSite: 'https://github.com/Mshnwq',
     license: 'MIT',
     // TODO: MIT file
-    licenseLink: 'https://github.com/Mshnwq/mshnwq-website',
+    licenseLink: 'https://github.com/Mshnwq/mshnwq-website/blob/main/LICENSE.md',
     copyright: true,
   },
   githubUser: 'mshnwq',
