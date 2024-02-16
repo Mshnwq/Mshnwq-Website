@@ -19,7 +19,7 @@ export const socialNetworks: SocialNetwork[] = [
     name: 'LinkedIn',
     icon: 'linkedin',
     tone: '#0A66C2',
-    link: 'https://www.linkedin.com/',
+    link: 'https://www.linkedin.com/in/',
     noAt: true,
   },
   {
@@ -35,11 +35,11 @@ export const socialNetworks: SocialNetwork[] = [
     link: 'https://stackoverflow.com/users/',
     noAt: true,
   },
-  // {
-  //   name: 'KeyBase',
-  //   icon: 'keybase',
-  //   tone: '#33A0FF',
-  //   link: 'https://keybase.io/',
-  //   noAt: true,
-  // },
+  {
+    name: 'KeyBase',
+    icon: 'keybase',
+    tone: '#33A0FF',
+    link: 'https://keybase.io/',
+    noAt: true,
+  },
 ];

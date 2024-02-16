@@ -13,24 +13,24 @@
   const keys = [
     {
       label: 'PGP',
-      value: 'FEDB 68F5 5C02 83A7',
-      link: 'https://keybase.io/aliciasykes/pgp_keys.asc?fingerprint=0688f8d34587d954e9e51fb8fedb68f55c0283a7',
+      value: '1073 AD7F 49BC 4421',
+      link: 'https://keybase.io/mshnwq/pgp_keys.asc?fingerprint=83736ac1763828d8260a91a21073ad7f49bc4421',
     },
     {
       label: 'Email',
       value: 'hayan@mshnwq.com',
       link: 'mailto:hayan@mshnwq.com',
     },
-    // {
-    //   label: 'Matrix',
-    //   value: '@lissy93:matrix.org',
-    //   link: 'https://matrix.to/#/@lissy93:matrix.org',
-    // },
-    // {
-    //   label: 'XMPP',
-    //   value: 'alicia@xmpp.is',
-    //   link: 'xmpp:alicia@xmpp.is?join',
-    // },
+    {
+      label: 'Matrix',
+      value: '@mshnwq:matrix.org',
+      link: 'https://matrix.to/#/@mshnwq:matrix.org',
+    },
+    {
+      label: 'XMPP',
+      value: 'mshnwq@xmpp.jp',
+      link: 'xmpp:mshnwq@xmpp.jp?join',
+    },
     // { 
     //   label: 'Signal', 
     //   value: 'trusted contacts only', 
