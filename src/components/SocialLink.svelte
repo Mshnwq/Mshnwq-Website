@@ -12,12 +12,11 @@
   export let isSmall = false;
   export let metrics: SocialMetric[] | null = null;
 
-  let hover = false;
-
   const formatUn = (username: string) => {
     return username.startsWith('@') ? username.slice(1) : username;
   };
-
+  
+  let hover = false;
   const toggleHover = (newState?: boolean) => {
     if (newState === undefined) hover = !hover;
     else hover = newState;
@@ -55,7 +54,7 @@
   a {
     color: var(--foreground);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -76,7 +75,7 @@
         transition: all ease-in-out 0.25s;
       }
       .social-user {
-        font-size: 1rem;
+        font-size: 0.925rem;
         opacity: 0.75;
         color: var(--dimmed-text);
         text-transform: capitalize;
@@ -93,14 +92,14 @@
       }
     }
     &:hover {
-      // color: var(--accent);
+      color: var(--accent);
       border: 1px solid var(--social-tone-dimmed);
       .social-title {
         transform: translateY(-2rem);
       }
       .social-user {
         transform: translateY(-1.25rem);
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         color: var(--foreground);
       }
       .social-metrics {
