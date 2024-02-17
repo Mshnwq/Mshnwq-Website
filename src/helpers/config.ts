@@ -131,93 +131,82 @@ const config: SiteConfig = {
   },
   workExperience: [
     {
-      company: 'AND.Digital',
-      companyUrl: 'https://and.digital/',
-      companyLogo: 'https://and.digital/favicon.ico',
-      jobTitle: 'Principle Engineer',
-      datesWorked: 'August 2022 - Present',
-      projectType: 'Clients',
+      company: 'Modern Hamat',
+      companyUrl: 'https://modernhamat.com',
+      companyLogo: '',
+      jobTitle: 'Head of Information Technology',
+      datesWorked: 'Jun 2023 - Dec 2023',
       projects: [
-        { name: 'Frasers Group', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
-        { name: 'Lloyds Bank', logo: 'https://i.ibb.co/GCSDPCq/Lloyds-bank.jpg', description: '', },
+        { name: 'Self Hosted ERP System V2', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
+        { name: 'Self Hosted ERP System V3', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
       ],
-      technologies: [ 'TypeScript', 'React Native', 'Azure' ],
+      technologies: ['Python', 'Odoo', 'AWS'],
     },
     {
-      company: 'Galaxy',
-      companyUrl: 'https://galaxy.com/',
-      companyLogo: 'https://i.ibb.co/fX2rF84/galaxy-digital.png',
-      jobTitle: 'VP Frontend Engineer',
-      datesWorked: 'Jan 2021 - July 2022',
+      company: 'Nobles International School',
+      companyUrl: 'https://nis-jeddah.com',
+      companyLogo: '',
+      jobTitle: 'Freelancer',
+      datesWorked: 'Sep 2023 - Oct 2023',
+      responsibilities: 'ERP Fingerprint HR System',
+      technologies: ['Python', 'Odoo', 'Networking', 'Git'],
+    },
+    {
+      company: 'Axis International Contracting',
+      companyUrl: 'https://al-mihwar.com',
+      companyLogo: '',
+      jobTitle: 'Freelancer',
+      datesWorked: 'Jul 2023 - Aug 2023',
+      responsibilities: 'Worked on Tender Project Managment Software',
+      technologies: ['Python', 'Excel', 'MS Project', 'GraphQL', 'Microsoft API'],
+    },
+    {
+      company: 'SCFS',
+      companyUrl: 'www.scfs.tech',
+      companyLogo: 'https://shanab.me/_next/image?url=%2Fassets%2Fimages%2Fexperinces%2Fscfs.webp&w=128&q=75',
+      jobTitle: 'Embedded Systems Engineer',
+      datesWorked: 'Jun 2022 - Jun 2023',
       responsibilities: 'Worked on real-time React-based Web3 trading application',
-      technologies: [ 'React', 'StoryBook', 'Cypress', 'web3js',],
+      projects: [
+        { name: 'Smart Shopping Cart', logo: 'https://shanab.me/_next/image?url=%2Fassets%2Fimages%2Fexperinces%2Fcart.webp&w=128&q=75', description: '', },
+        { name: 'Hotel Door Event System', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
+        { name: 'RFID Tracking System', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
+      ],
+      technologies: ['Python', 'C#', 'C++', 'Flutter'],
     },
     {
-      company: 'Freelance',
-      companyUrl: 'https://aliciasykes.com/',
-      companyLogo: 'https://i.ibb.co/Dt6kGFQ/brick.png',
-      jobTitle: 'Full-Stack Developer',
-      datesWorked: 'February 2019 - Jan 2021',
+      company: 'Data Glaciar',
+      companyUrl: 'https://www.dataglacier.org',
+      companyLogo: '',
+      jobTitle: 'NLP and Industrial training Intern',
+      datesWorked: 'Jun 2022 - Dec 2022',
+      responsibilities: '',
+      projects: [
+        { name: 'Halaqh', logo: 'https://i.ibb.co/4PcVN4B/Eon.png', description: '', },
+      ],
+      technologies: ['Python', 'AWS'],
+    },
+    {
+      company: 'Zaka',
+      companyUrl: 'https://zaka.ai',
+      companyLogo: 'https://shanab.me/_next/image?url=%2Fassets%2Fimages%2Fexperinces%2Fzaka.webp&w=128&q=75',
+      jobTitle: 'Artificial Intelligence Intern',
+      datesWorked: 'Mar 2021 - Jun 2021',
       responsibilities: '',
       projectType: 'Projects',
-      projects: [
-        { name: 'Futr.AI', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
-        { name: 'Shell', logo: 'https://i.ibb.co/7r1K9cb/Shell.png', description: '', },
-        { name: 'Shell Recharge', logo: 'https://i.ibb.co/BBdP2Wh/Shell-recharge.jpg', description: ''  },
-        { name: 'Machine Max', logo: 'https://i.ibb.co/XzXTKWF/machine-max.png', description: '', },
-        { name: 'Ctemplar', logo: 'https://i.ibb.co/2Sg6G3s/Ctemplar.png', description: '', },
-      ],
-      technologies: [ 'React', 'React Native', 'TypeScript', 'GraphQL', 'GCP' ],
+      // projects: [
+        // { name: 'Psychiatrist bot', logo: 'https://i.ibb.co/1R657nh/Wwarn.jpg', description: '', },
+      // ],
+      technologies: ['Python'],
     },
     {
-      company: 'Accenture',
-      companyUrl: 'https://www.accenture.com/',
-      companyLogo: 'https://i.ibb.co/kcCKDF1/accenture.png',
-      jobTitle: 'Software Developer',
-      datesWorked: 'June 2014 - February 2019',
-      responsibilities: ''
-        + 'After joining as an associate, I had the opportunity to work on a range of exciting client projects, '
-        + 'each with their own challenges, his helped me to develop my skills and knowledge in a variety of areas. '
-        + 'Over time I worked my way up to a senior role, where I could actively deliver high quality solutions to clients.',
-        projectType: 'Clients',
-        projects: [
-        { name: 'E.ON', logo: 'https://i.ibb.co/4PcVN4B/Eon.png', description: '', },
-        { name: 'B&Q', logo: 'https://i.ibb.co/F79xSDK/Bandq.jpg', description: '', },
-        { name: 'Boots', logo: 'https://i.ibb.co/SnPtC8t/Boots.jpg', description: '', },
-        { name: 'TK Maxx', logo: 'https://i.ibb.co/MBkQVs1/tkmaxx.jpg', description: '', },
-        { name: 'Vodafone', logo: 'https://i.ibb.co/Zh1SwbR/Vodafone.png', description: '', },
-        { name: 'UKI Innovation Center', logo: 'https://i.ibb.co/1JX4Q9Y/Accenture-innovation.jpg', description: '', },
-      ],
-      technologies: [ 'C#', 'Angular', 'Node', 'AWS' ],
-    },
-    {
-      company: 'University of Oxford',
-      companyUrl: 'https://www.ox.ac.uk/',
-      companyLogo: 'https://i.ibb.co/QYmLPTX/oxford-uni.jpg',
-      jobTitle: 'Intern',
-      datesWorked: 'June 2013 - September 2013',
-      responsibilities: 'Worked on developing a Java application which would calculate the most '
-        + 'effective mg of antimalarial drug, per kg or patient body weight, to prevent vaccine resistance building up. '
-        + 'Involved dealing with millions of patient records, which were often in varying formats and units.',
-        projectType: 'Projects',
-        projects: [
-        { name: 'WWARN', logo: 'https://i.ibb.co/1R657nh/Wwarn.jpg', description: '', },
-      ],
-      technologies: [ 'Java', 'apachetomcat', 'junit', 'gradle' ],
-    },
-    {
-      company: 'British Army',
-      companyUrl: 'https://www.army.mod.uk/',
-      companyLogo: 'https://i.ibb.co/gv6mbKw/Army.jpg',
-      jobTitle: 'Soldier',
-      datesWorked: '',
+      company: 'Smart Methods',
+      companyUrl: 'https://s-m.com.sa',
+      companyLogo: '',
+      jobTitle: 'Computer Engineering Intern',
+      datesWorked: 'Nov 2020 - Dec 2020',
       responsibilities: '',
-      projectType: 'Regiments',
-      projects: [
-        { name: 'Signals', logo: 'https://i.ibb.co/F5mhzkr/Signals.png', description: '', },
-        { name: 'Oxford UOTC', logo: 'https://i.ibb.co/ZMH1TWq/ouotc.jpg', description: '', },
-        { name: 'Intelligence Corps', logo: 'https://i.ibb.co/svn2XLq/mi.jpg', description: '', },
-      ],
+      technologies: [],
     },
   ],
   projectComplimentaryData: [
@@ -509,82 +498,119 @@ const config: SiteConfig = {
     backend: [
       {
         language: 'Python',
-        projects: ['RFID', 'Hotel'],
+        projects: [
+          // 'RFID', 
+          'Cryptography-KAU', 
+          'Metallum-Extractor', 
+          'Excel_Scripts'
+        ],
       },
       {
         language: 'Go',
-        projects: ['Endpoint Router'],
+        projects: [
+          // 'Endpoint-Router'
+        ],
       },
       {
         language: 'Java',
-        projects: ['Chess'],
+        projects: [
+          'Java-university'
+        ],
       },
     ],
     frontend: [
       {
         language: 'Svelte',
-        projects: ['my-website'],
+        projects: [
+          'mshnwq-website'
+        ],
       },
       {
         language: 'QT',
-        projects: ['web-check'],
+        projects: [
+          'Metallum-Extractor', 
+          'shopping_cart_app'
+        ],
       },
       {
         language: 'Flutter',
-        projects: ['nfu'],
+        projects: [
+          'shopping_cart_app'
+        ],
       },
     ],
     hardware: [
       {
         language: 'C++',
-        projects: ['nfu'],
+        projects: [
+          'Golden_Rat', 
+          'Minix3-Project'
+        ],
       },
       {
         language: 'Verilog',
-        projects: ['nfu'],
+        projects: [
+          'FPGA_RSA_UHF_RFID'
+        ],
       },
       {
         language: 'Assembly',
-        projects: ['nfu'],
+        projects: [
+          'Logisim'
+        ],
       },
     ],
     other: [
       {
         language: 'Bash',
-        projects: ['dotfiles'],
+        projects: [
+          'dotfiles'
+        ],
       },
       {
         language: 'Docker',
-        projects: ['', 'dashy'],
-      },
-      {
-        language: 'Config',
-        projects: ['dotfiles'],
-      },
-      {
-        language: 'Markdown',
-        projects: ['personal-security-checklist'],
+        projects: [
+          // 'Endpoint-Router'
+        ],
       },
     ],
   },
   techStackExtras: {
     devOps: [
-      'Ansible', 'Kubernetes', 'GitHubActions', 'Prometheus', 'Grafana', 'Influx'
+      'Ansible', 
+      'Kubernetes', 
+      'GitHubActions', 
+      'Grafana', 
+      'Prometheus', 
+      'Influx',
     ],
     cloud: [
-      'Ubuntu', 'CloudFlare', 'Azure', 'AWS', 'GCP',
+      'Ubuntu', 
+      'CloudFlare', 
+      'Azure', 
+      'AWS',
     ],
     databases: [
-      'PostgreSQL', 'SQLite', 'Redis', 'MySQL',
+      'PostgreSQL', 
+      'SQLite', 
+      'Redis', 
+      'MySQL',
+      // 'MariaDB',
     ],
     testing: [
-      'Jest', 'Puppeteer', 'Cypress',
+      'Jest', 
+      'Puppeteer', 
+      'Cypress',
     ],
     security: [
-      'Crowdsec', 'Authelia', 'Nmap', 'Maltego', 'Wireshark',
+      // 'Crowdsec', 
+      // 'Authelia', 
+      'Wireshark',
     ],
     networking: [
-      'Headscale', 'Tailscale', 'NginxProxyManager',
+      'Headscale', 
+      'Tailscale', 
+      // 'NginxProxyManager',
     ],
   },
 };
