@@ -63,7 +63,6 @@ const config: SiteConfig = {
     author: 'Hayan Al-Machnouk',
     authorSite: 'https://github.com/Mshnwq',
     license: 'MIT',
-    // TODO: MIT file
     licenseLink: 'https://github.com/Mshnwq/mshnwq-website/blob/main/LICENSE.md',
     copyright: true,
   },
@@ -484,31 +483,27 @@ const config: SiteConfig = {
 `,
   },
   about: {
-    intro: 'Just your average dev...',
+    intro: 'Just a tech enthusiast...',
     bio: [
-      "I'm Alicia, a London-based software engineer.",
+      `Hi, I'm Hayan, a recent computer engineering graduate with a degree that focused on hardware,
+      embedded systems, and software development.`,
 
-      `I have a particular interest in privacy-respecting software, as well as security.
-      I've carried out a few audits, and authored the initial versions of
-      <a href="https://github.com/Lissy93/personal-security-checklist">Personal Security Checklist</a>
-      and <a href="https://github.com/Lissy93/awesome-privacy">Awesome Privacy</a>.`,
+      `After graduation, I began working in infrastructure and IT systems, 
+      delving deep into Linux, cloud computing, and system administration. 
+      I quickly found my niche and became a Co-Founder of <a href="https://nyrn-sa.com">Nyrn</a> an ERP consultancy, 
+      leveraging my expertise to streamline business operations.
+      Additionally, I'm Co-Founder and CTO at <a href="https://taskmasters-sa.com">Taskmasters</a> a consulting firm, 
+      where I oversee technology strategies within the groups holdings.`,
 
-      `I enjoy going to (<a href="https://notes.aliciasykes.com/p/0s5s3uOtKj">and sometimes winning!</a>) hackathons.
-      And if you're London-based, you'll probably have bumped into me at a tech meetup.`,
+      `I love Linux and the open source community, specially security and privacy-respecting software. You can find my
+      <a href="https://github.com/Mshnwq/dotfiles">dotfiles setup</a> which I'm always tweaking to improve and master my toolkit.
+      I also maintain a small homelab to enhance my system administration skills and host services for privacy and security reasons. 
+      Some of my open-source projects include <a href="https://github.com/Mshnwq/metallum-api">Metallum API</a>, <a href="https://devpost.com/software/halaqh-platform">Halaqh</a>, and <a href="https://github.com/Mshnwq/Cryptography-KAU">KAU Cryptography</a>.
+      In my free time, I enjoy sharing what I'v learned on my <a href="https://blog.mshnwq.com">Blog</a> aswell.`, 
 
-      `I love Linux, and (imo) have a neat
-      <a href="https://github.com/lissy93/dotfiles">dotfiles setup</a> which I'm always tweaking.
-      And I have a small homelab, that I'm using to learn more about system administration,
-      and host my own services to (attempt to) escape big tech.
-      I made <a href="https://github.com/Lissy93/dashy">dashboard app</a> for it.`,
-
-      `For work, I'm a principal software engineer at <a href="https://and.digital/">AND.Digital</a>,
-      where I work across various client projects, help to upskill and mentor junior and mid-level
-      developers and ensure that the code we're delivering is the best it can be.`,
-
-      `Away from the keyboard, I like sports, hanging out with friends, and going to Church.`,
+      `Beyond tech, I'm a (cine-biblio-audio)phile, and a health nut :)`,
     ],
-    picture: 'https://i.ibb.co/svxHFMD/alicia-sykes-3.jpg',
+    picture: 'https://i.ibb.co/Rvxbdmd/profile-crop.jpg',
   },
   techStack: {
     backend: [
