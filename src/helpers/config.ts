@@ -603,8 +603,8 @@ const config: SiteConfig = {
       'Cypress',
     ],
     security: [
-      // 'Crowdsec', 
-      // 'Authelia', 
+      'Crowdsec', 
+      'Authelia', 
       'Wireshark',
     ],
     networking: [
