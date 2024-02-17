@@ -133,28 +133,29 @@ const config: SiteConfig = {
     {
       company: 'Modern Hamat',
       companyUrl: 'https://modernhamat.com',
-      companyLogo: '',
+      companyLogo: 'https://i.ibb.co/Brc9Wmj/hamat.png',
       jobTitle: 'Head of Information Technology',
       datesWorked: 'Jun 2023 - Dec 2023',
-      projects: [
-        { name: 'Self Hosted ERP System V2', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
-        { name: 'Self Hosted ERP System V3', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
-      ],
+      responsibilities: 'ERP System',
+      // projects: [
+        // { name: 'Self Hosted ERP System V2', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
+        // { name: 'Self Hosted ERP System V3', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
+      // ],
       technologies: ['Python', 'Odoo', 'AWS'],
     },
     {
       company: 'Nobles International School',
       companyUrl: 'https://nis-jeddah.com',
-      companyLogo: '',
+      companyLogo: 'https://i.ibb.co/42Js6Bp/nis.png',
       jobTitle: 'Freelancer',
       datesWorked: 'Sep 2023 - Oct 2023',
-      responsibilities: 'ERP Fingerprint HR System',
+      responsibilities: 'Installed ERP System and Integrated Fingerprint Device with Odoo HR Module',
       technologies: ['Python', 'Odoo', 'Networking', 'Git'],
     },
     {
       company: 'Axis International Contracting',
       companyUrl: 'https://al-mihwar.com',
-      companyLogo: '',
+      companyLogo: 'https://i.ibb.co/wcbCW5q/axis.png',
       jobTitle: 'Freelancer',
       datesWorked: 'Jul 2023 - Aug 2023',
       responsibilities: 'Worked on Tender Project Managment Software',
@@ -162,27 +163,28 @@ const config: SiteConfig = {
     },
     {
       company: 'SCFS',
-      companyUrl: 'www.scfs.tech',
+      companyUrl: 'http://www.scfs.tech',
       companyLogo: 'https://shanab.me/_next/image?url=%2Fassets%2Fimages%2Fexperinces%2Fscfs.webp&w=128&q=75',
       jobTitle: 'Embedded Systems Engineer',
       datesWorked: 'Jun 2022 - Jun 2023',
       responsibilities: 'Worked on real-time React-based Web3 trading application',
       projects: [
-        { name: 'Smart Shopping Cart', logo: 'https://shanab.me/_next/image?url=%2Fassets%2Fimages%2Fexperinces%2Fcart.webp&w=128&q=75', description: '', },
-        { name: 'Hotel Door Event System', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
-        { name: 'RFID Tracking System', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
+        { name: 'Smart Cart', logo: 'https://i.ibb.co/pXLT815/cart.webp', description: '', },
+        { name: 'Dullani', logo: 'https://i.ibb.co/D7bvLm3/dullani.png', description: '', },
+        // { name: 'Hotel Door Event System', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
+        // { name: 'RFID Tracking System', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
       ],
       technologies: ['Python', 'C#', 'C++', 'Flutter'],
     },
     {
       company: 'Data Glaciar',
       companyUrl: 'https://www.dataglacier.org',
-      companyLogo: '',
+      companyLogo: 'https://i.ibb.co/HFqbvCw/data-glaciers.png',
       jobTitle: 'NLP and Industrial training Intern',
       datesWorked: 'Jun 2022 - Dec 2022',
       responsibilities: '',
       projects: [
-        { name: 'Halaqh', logo: 'https://i.ibb.co/4PcVN4B/Eon.png', description: '', },
+        { name: 'Halaqh', logo: 'https://i.ibb.co/0ncKjFN/halaqh.png', description: '', },
       ],
       technologies: ['Python', 'AWS'],
     },
@@ -202,11 +204,11 @@ const config: SiteConfig = {
     {
       company: 'Smart Methods',
       companyUrl: 'https://s-m.com.sa',
-      companyLogo: '',
+      companyLogo: 'https://i.ibb.co/pyKnP7Q/smart-methods.png',
       jobTitle: 'Computer Engineering Intern',
       datesWorked: 'Nov 2020 - Dec 2020',
       responsibilities: '',
-      technologies: [],
+      technologies: ['Ubuntu'],
     },
   ],
   projectComplimentaryData: [
@@ -502,19 +504,19 @@ const config: SiteConfig = {
           // 'RFID', 
           'Cryptography-KAU', 
           'Metallum-Extractor', 
-          'Excel_Scripts'
+          'Excel_Scripts',
         ],
       },
       {
         language: 'Go',
         projects: [
-          // 'Endpoint-Router'
+          // 'Endpoint-Router',
         ],
       },
       {
         language: 'Java',
         projects: [
-          'Java-university'
+          'Java-university',
         ],
       },
     ],
@@ -522,20 +524,20 @@ const config: SiteConfig = {
       {
         language: 'Svelte',
         projects: [
-          'mshnwq-website'
+          'mshnwq-website',
         ],
       },
       {
         language: 'QT',
         projects: [
           'Metallum-Extractor', 
-          'shopping_cart_app'
+          'shopping_cart_app',
         ],
       },
       {
         language: 'Flutter',
         projects: [
-          'shopping_cart_app'
+          'shopping_cart_app',
         ],
       },
     ],
@@ -544,19 +546,20 @@ const config: SiteConfig = {
         language: 'C++',
         projects: [
           'Golden_Rat', 
-          'Minix3-Project'
+          'Minix3-Project',
+          'shoppingCart_Embedded',
         ],
       },
       {
         language: 'Verilog',
         projects: [
-          'FPGA_RSA_UHF_RFID'
+          'FPGA_RSA_UHF_RFID',
         ],
       },
       {
         language: 'Assembly',
         projects: [
-          'Logisim'
+          'Logisim',
         ],
       },
     ],
@@ -564,13 +567,13 @@ const config: SiteConfig = {
       {
         language: 'Bash',
         projects: [
-          'dotfiles'
+          'dotfiles',
         ],
       },
       {
         language: 'Docker',
         projects: [
-          // 'Endpoint-Router'
+          // 'Endpoint-Router',
         ],
       },
     ],
