@@ -2,48 +2,51 @@
   import { config } from '$src/store/Config';
   import Heading from '$src/components/Heading.svelte';
   import LangBadge from '$src/components/LangBadge.svelte';
-  import Icon from '$src/components/Icon.svelte';
 
   const { workExperience } = config; 
+</script>
 
-  </script>
-
-<Heading level="h2" color="var(--foreground)">Experience</Heading>
-
-{#each workExperience as job}
-  <div class="experience">
-    <div class="line"></div>
-    <img class="logo" src={job.companyLogo} alt={job.company} />
-    <div class="info">
-      <h5 class="title">
-        <span class="position">{job.jobTitle}</span>
-        <span class="at">@</span>
-        <a class="company" href={job.companyUrl} target="_blank" rel="noreferrer">{job.company}</a>
-      </h5>
-      <p class="date">{job.datesWorked}</p>
-      <p class="description">{job.responsibilities || ''}</p>
-      {#if job.projects && job.projects.length > 0}
-        <h6>{job.projectType || 'Projects' }</h6>
-        <div class="projects">
-          {#each job.projects as project}
-            <div class="sub-project">
-              <img src={project.logo} alt={project.name} />
-              <p>{project.name} {project.description}</p>
-            </div>
-          {/each}
-        </div>
-      {/if}
-      {#if job.technologies && job.technologies.length > 0}
-        <h6>Core Technologies</h6>
-        <div class="technologies">
-          {#each job.technologies as tech}
-            <LangBadge language={tech} />
-          {/each}
-        </div>
-      {/if}
+<section class="work-experience-section">
+  <Heading level="h2" color="var(--foreground)">Experience</Heading>
+  {#each workExperience as job}
+    <div class="experience">
+      <div class="line"></div>
+      <a href="{job.companyUrl}" target="_blank">
+        <img class="logo" src={job.companyLogo} alt={job.company} />
+      </a>
+      <div class="info">
+        <h5 class="title">
+          <span class="position">{job.jobTitle}</span>
+          <span class="at">@</span>
+          <a class="company" href={job.companyUrl} target="_blank" rel="noreferrer">{job.company}</a>
+        </h5>
+        <p class="date">{job.datesWorked}</p>
+        <p class="description">{job.responsibilities || ''}</p>
+        {#if job.projects && job.projects.length > 0}
+          <h6>{job.projectType || 'Projects' }</h6>
+          <div class="projects">
+            {#each job.projects as project}
+              <div class="sub-project">
+                <a href="{project.url}" target="_blank">
+                  <img src={project.logo} alt={project.name} />
+                </a>
+                <p>{project.name}</p>
+              </div>
+            {/each}
+          </div>
+        {/if}
+        {#if job.technologies && job.technologies.length > 0}
+          <h6>Core Technologies</h6>
+          <div class="technologies">
+            {#each job.technologies as tech}
+              <LangBadge language={tech} />
+            {/each}
+          </div>
+        {/if}
+      </div>
     </div>
-  </div>
-{/each}
+  {/each}
+</section>
 
 <style lang="scss">
   .experience {
@@ -74,8 +77,8 @@
       }
     }
     p.description {
-      font-size: 0.8rem;
-      margin: 0.5rem 0;
+      font-size: 0.775rem;
+      margin: 0.3rem 0;
     }
     p.date {
       margin: 0.25rem 0;
@@ -101,10 +104,11 @@
     }
     .info {
       flex-grow: 1;
-      padding-bottom: 1rem;
+      width: calc(100% - 4rem);
+      padding-bottom: 1.25rem;
       h6 {
-        margin: 0.5rem 0;
-        font-size: 1rem;
+        margin: .5rem 0;
+        font-size: 0.85rem;
         font-weight: 500;
         color: var(--dimmed-text);
       }
@@ -121,6 +125,10 @@
           flex-direction: column;
           justify-content: center;
           img {
+            display: block;
+            margin: 0;
+            padding: 0; 
+            border: none;
             width: 2.5rem;
             height: 2.5rem;
             border-radius: 2rem;
@@ -132,6 +140,7 @@
             min-width: 3rem;
             max-width: 4rem;
             margin: 0.2rem 0;
+            text-decoration: none;
             text-align: center;
             word-break: break-word;
             text-overflow: ellipsis;
@@ -145,7 +154,7 @@
           &:hover {
             img {
               filter: grayscale(0);
-              transform: scale(1.1);
+              transform: scale(1.2);
             }
             p {
               overflow: visible;
@@ -164,5 +173,9 @@
         border-radius: 50%;
       }
     }
+  }
+  a {
+    position: relative;
+    z-index: 2;
   }
 </style>
