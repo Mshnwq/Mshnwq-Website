@@ -103,7 +103,6 @@
       }
     }
     .info {
-      flex-grow: 1;
       width: calc(100% - 4rem);
       padding-bottom: 1.25rem;
       h6 {
