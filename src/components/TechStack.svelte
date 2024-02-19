@@ -17,7 +17,7 @@
     There's no one-size fits all, and as such I'm always trying out new technologies, and constantly learning.
   </p>
   <p class="sub-info">
-    The following technologies are the ones I'm most familiar with, and I've linked to code that I've written with each.
+    The following technologies ones I'm familiar with, linked are code I've written with each.
   </p>
   <div class="stack-table">
     {#each techStacks as stackName}
@@ -75,8 +75,8 @@
         font-size: 1.5rem;
         letter-spacing: 0.2rem;
         color: var(--accent);
-        opacity: 0.4;
-        margin: 0.5rem 0 0 0;
+        opacity: 0.5;
+        margin: 1.25rem 0 0 0;
         h4 { margin: 0; }
       }
     }
