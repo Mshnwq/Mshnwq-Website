@@ -53,6 +53,7 @@ export interface SiteConfig {
     projects?: {
       name: string;
       logo: string;
+      url?: string;
       description: string;
     }[];
     technologies?: string[];
