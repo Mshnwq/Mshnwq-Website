@@ -19,6 +19,7 @@
     // Programming Languages
     'android': { name: 'Android', color: '3DDC84', icon: 'android' },
     'astro': { name: 'Astro', color: 'FF5D01', icon: 'astro' },
+    'assembly': { name: 'Assembly', color: '007AAC', icon: 'assemblyscript' },
     'alpine': { name: 'Alpine.js', color: '8BC0D0', icon: 'alpinedotjs' },
     'angular': { name: 'Angular', color: 'DD0031', icon: 'angular' },
     'babel': { name: 'Babel', color: 'F9DC3E', icon: 'babel' },
@@ -34,11 +35,14 @@
     'dart': { name: 'Dart', color: '0175C2', icon: 'dart' },
     'dockerfile': { name: 'Docker', color: '2496ED', icon: 'docker' },
     'docker': { name: 'Docker', color: '2496ED', icon: 'docker' },
-    'elixir': { name: 'Elixir', color: '4B275F', icon: 'Elixir' },
+    'elixir': { name: 'Elixir', color: '4B275F', icon: 'elixir' },
     'elm': { name: 'Elm', color: '60B5CC', icon: 'elm' },
-    'erlang': { name: ' Erlang', color: 'A90533', icon: ' erlang' },
+    'erlang': { name: 'Erlang', color: 'A90533', icon: 'erlang' },
+    'excel': { name: 'Excel', color: '217346', icon: 'microsoftexcel' },
     'fsharp': { name: 'F#', color: 'B845FC', icon: 'fsharp' },
+    'flask': { name: 'Flask', color: '000000', icon: 'flask' },
     'flutter': { name: 'Flutter', color: '02569B', icon: 'flutter' },
+    'fastapi': { name: 'FastAPI', color: '009688', icon: 'fastapi' },
     'go': { name: 'Go', color: '00ADD8', icon: 'go' },
     'html': { name: 'HTML', color: 'E34F26', icon: 'html5' },
     'haskell': { name: ' Haskell', color: '5D4F85', icon: ' haskell' },
@@ -49,18 +53,22 @@
     'livescript': { name: 'LiveScript', color: '65ADF1', icon: 'nativescript' },
     'node': { name: 'Node.js', color: '339933', icon: 'nodedotjs' },
     'nim': { name: 'Nim', color: 'FFE953', icon: 'nim' },
+    'numpy': { name: 'Numpy', color: '013243', icon: 'numpy' },
     'markdown': { name: 'Markdown', color: '000000', icon: 'markdown' },
     'makefile': { name: 'Makefile', color: '006600', icon: 'cmake' },
     'ocaml': { name: ' OCaml', color: 'EC6813', icon: ' ocaml' },
+    'pandas': { name: 'Pandas', color: '150458', icon: 'pandas' },
     'perl': { name: 'Perl', color: '39457E', icon: 'perl' },
     'php': { name: 'PHP', color: '777BB4', icon: 'php' },
     'powershell': { name: 'PowerShell', color: '5391FE', icon: 'powershell' },
     'pug': { name: 'Pug', color: 'A86454', icon: 'pug' },
     'python': { name: 'Python', color: '3C78A9', icon: 'python' },
+    'qt': { name: 'QT', color: '41CD52', icon: 'qt' },
     'r': { name: 'R', color: '198CE7', icon: 'r' },
     'react': { name: 'React', color: '61DAFB', icon: 'react' },
     'reactnative': { name: 'React Native', color: '09D3AC', icon: 'react' },
     'red': { name: 'Red', color: 'B32629', icon: 'red' },
+    'ros': { name: 'ROS', color: '22314E', icon: 'ros' },
     'ruby': { name: 'Ruby', color: 'CC342D', icon: 'ruby' },
     'rust': { name: 'Rust', color: 'e86243', icon: 'rust' },
     'scala': { name: 'Scala', color: 'DC322F', icon: 'scala' },
@@ -70,7 +78,7 @@
     'swift': { name: 'Swift', color: 'F05138', icon: 'swift' },
     'typescript': { name: 'TypeScript', color: '3178C6', icon: 'typescript' },
     'vue': { name: 'Vue.js', color: '4FC08D', icon: 'vuedotjs' },
-    'verilog': { name: 'Verilog', color: '4FC08D', icon: 'vuedotjs' },
+    'verilog': { name: 'Verilog', color: 'FFFFFF', icon: 'velog' },
     'webassembly': { name: 'WebAssembly', color: '654FF0', icon: 'webassembly' },
 
     // DevOps
@@ -79,14 +87,16 @@
     'githubactions': { name: 'GitHub Actions', color: '2088FF', icon: 'githubactions' },
     'grafana': { name: 'Grafana', color: 'F46800', icon: 'grafana' },
     'prometheus': { name: 'Prometheus', color: 'E6522C', icon: 'prometheus' },
-    'influxdb': { name: 'Influx DB', color: 'E6522C', icon: 'influx' },
+    'influxdb': { name: 'InfluxDB', color: '22ADF6', icon: 'influxdb' },
+    'gitlab': { name: 'GitLab', color: 'FC6D26', icon: 'gitlab' },
 
     // Cloud
     'netlify': { name: 'Netlify', color: '00C7B7', icon: 'netlify' },
     'vercel': { name: 'Vercel', color: '000000', icon: 'vercel' },
+    'heroku': { name: 'Heroku', color: '430098', icon: 'heroku' },
     'cloudflare': { name: 'CloudFlare', color: 'F38020', icon: 'cloudflare' },
     'aws': { name: 'AWS', color: '232F3E', icon: 'amazonaws' },
-    'azure': { name: 'Azure', color: '0089D6', icon: 'azuredevops' },
+    'azure': { name: 'Azure', color: '0078D4', icon: 'microsoftazure' },
     'gcp': { name: 'GCP', color: '4285F4', icon: 'googlecloud' },
     'ibmcloud': { name: 'IBM Cloud', color: '1261FE', icon: 'ibmcloud' },
 
@@ -103,12 +113,13 @@
     'enzyme': { name: 'Testing Library', color: 'E33332', icon: 'testingsrcrary' },
     'cypress': { name: 'Cypress', color: '17202C', icon: 'cypress' },
     'storybook': { name: 'Storybook', color: 'FF4785', icon: 'storybook' },
+    'selenium': { name: 'Selenium', color: '43B02A', icon: 'selenium' },
     'junit': { name: 'JUnit', color: '25A162', icon: 'junit5' },
 
     // Security
     'nmap': { name: 'Nmap', color: '4F5D95', icon: 'nmap' },
-    'crowdsec': { name: 'Crowdsec', color: '4F5D95', icon: 'crowdsec' },
-    'authelia': { name: 'Authelia', color: '4F5D95', icon: 'authelia' },
+    'crowdsec': { name: 'Crowdsec', color: '8070DA', icon: 'springsecurity' },
+    'authelia': { name: 'Authelia', color: '113155', icon: 'authelia' },
     'owaspzap': { name: 'OWASP ZAP', color: '4B8BBE', icon: 'owasp' },
     'burpsuite': { name: 'Burp Suite', color: 'FAC748', icon: 'burpsuite' },
     'wireshark': { name: 'Wireshark', color: '1679A7', icon: 'wireshark' },
@@ -116,27 +127,40 @@
 
     // Servers
     'apachetomcat': { name: 'Apache Tomcat', color: 'F8DC75', icon: 'apachetomcat' },
-    'nginx': { name: 'Nginx', color: '269539', icon: 'nginx' },
+    'nginx': { name: 'Nginx', color: '009639', icon: 'nginx' },
     'apache': { name: 'Apache', color: 'D22128', icon: 'apache' },
     'caddy': { name: 'Caddy', color: '0D597F', icon: 'caddy' },
     'lighttpd': { name: 'Lighttpd', color: 'FFB500', icon: 'lighttpd' },
+    'nginxproxymanager': { name: 'Nginx Proxy Manager', color: 'F15833', icon: 'nginxproxymanager' },
 
     // APIs
     'graphql': { name: 'GraphQL', color: 'E10098', icon: 'graphql' },
 
-    // Servers
-    'ubuntu': { name: 'Ubuntu', color: 'A81D33', icon: 'ubuntu' },
+    // Linux
     'debian': { name: 'Debian', color: 'A81D33', icon: 'debian' },
-    'gitlab': { name: 'GitLab', color: 'FC6D26', icon: 'gitlab' },
-
+    'ubuntu': { name: 'Ubuntu', color: 'E95420', icon: 'ubuntu' },
+    'arch': { name: 'Arch', color: '1793D1', icon: 'archlinux' },
+    
+    // Services
+    'odoo': { name: 'Odoo', color: '714B67', icon: 'odoo' },
+    
+    // Hardware
+    'esp32': { name: 'ESP32', color: 'E7352C', icon: 'espressif' },
+    'raspberrypi': { name: 'Raspberry Pi', color: 'A22846', icon: 'raspberrypi' },
+    'arduino': { name: 'Arduino', color: '00878F', icon: 'arduino' },
+    
     // Tools
     'gradle': { name: 'Gradle', color: '02303A', icon: 'gradle' },
+    'git': { name: 'Git', color: 'F05032', icon: 'git' },
+    'github': { name: 'Github', color: '181717', icon: 'github' },
+    'multisim': { name: 'Multisim', color: '57B685', icon: 'multisim' },
+    'streamlit': { name: 'Streamlit', color: 'FF4B4B', icon: 'streamlit' },
+    'tmux': { name: 'Tmux', color: '1BB91F', icon: 'tmux' },
 
     // DevOps
-    'rabbitMq': { name: 'RabbitMQ', color: 'FF6600', icon: 'rabbitmq' },
     'nixos': { name: 'NixOS', color: '41439B', icon: 'nixos' },
+    'rabbitMq': { name: 'RabbitMQ', color: 'FF6600', icon: 'rabbitmq' },
     'rancher': { name: 'Rancher', color: '0075A8', icon: 'rancher' },
-    'raspberrypi': { name: 'Raspberry Pi', color: 'A22846', icon: 'raspberrypi' },
 
     // Web3
     'ethereum': { name: 'Ethereum', color: '3C3C3D', icon: 'ethereum' },
@@ -150,9 +174,11 @@
     'web3js': { name: 'Web3.js', color: 'F16822', icon: 'web3dotjs' },
 
     // Networking
+    'wireguard': { name: 'Wireguard', color: '88171A', icon: 'wireguard' },
     'headscale': { name: 'Headscale', color: 'FFC300', icon: 'harmony' },
     'tailscale': { name: 'Tailscale', color: '2081E2', icon: 'opensea' },
-    'nginxproxymanager': { name: 'Nginx Proxy Manager', color: 'F16822', icon: 'web3dotjs' },
+    'mqtt': { name: 'MQTT', color: '660066', icon: 'mqtt' },
+    'mosquitto': { name: 'Mosquitto', color: '3C5280', icon: 'eclipsemosquitto' },
   };
 
   // Check if hex code of badge is very pale, so we can use black icon instead
