@@ -136,12 +136,31 @@ const config: SiteConfig = {
       companyLogo: 'https://i.ibb.co/Brc9Wmj/hamat.png',
       jobTitle: 'Head of Information Technology',
       datesWorked: 'Jun 2023 - Dec 2023',
-      responsibilities: 'ERP System',
+      responsibilities: 'Led the establishment and optimizated its IT infrastructure, encompassing network, '
+                      + 'server, email, storage and ERP system setup and implementation, Dockerized server '
+                      + 'infrastructure with data migration and automated backups, custom Odoo modules '
+                      + 'integration and development, VPN centralized storage setup with security protocols, '
+                      + 'and the creation of dashboards for metrics visualization.',
       // projects: [
         // { name: 'Self Hosted ERP System V2', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
         // { name: 'Self Hosted ERP System V3', logo: 'https://i.ibb.co/sQcvxmG/Frasers.png', description: '', },
       // ],
-      technologies: ['Python', 'Odoo', 'AWS'],
+      technologies: [
+        'Python', 
+        'Go', 
+        'Odoo', 
+        'Ubuntu', 
+        'Docker', 
+        'AWS',
+        'Tmux',
+        'Crowdsec', 
+        'Authelia', 
+        'Wireguard', 
+        'Nginx', 
+        'Grafana', 
+        'Prometheus', 
+        'InfluxDB', 
+      ],
     },
     {
       company: 'Nobles International School',
@@ -150,7 +169,12 @@ const config: SiteConfig = {
       jobTitle: 'Freelancer',
       datesWorked: 'Sep 2023 - Oct 2023',
       responsibilities: 'Installed ERP System and Integrated Fingerprint Device with Odoo HR Module',
-      technologies: ['Python', 'Odoo', 'Networking', 'Git'],
+      technologies: [
+        'Python',
+        'Docker', 
+        'Wireguard', 
+        'Odoo', 
+      ],
     },
     {
       company: 'Axis International Contracting',
@@ -158,23 +182,40 @@ const config: SiteConfig = {
       companyLogo: 'https://i.ibb.co/wcbCW5q/axis.png',
       jobTitle: 'Freelancer',
       datesWorked: 'Jul 2023 - Aug 2023',
-      responsibilities: 'Worked on Tender Project Managment Software',
-      technologies: ['Python', 'Excel', 'MS Project', 'GraphQL', 'Microsoft API'],
+      responsibilities: 'Worked on automating tender Project Managment Software',
+      technologies: [
+        'Python',
+        'Pandas',
+        'GraphQL',
+        'Selenium',
+        'Excel',
+      ],
     },
     {
       company: 'SCFS',
       companyUrl: 'http://www.scfs.tech',
-      companyLogo: 'https://shanab.me/_next/image?url=%2Fassets%2Fimages%2Fexperinces%2Fscfs.webp&w=128&q=75',
+      companyLogo: 'https://i.ibb.co/H4CnnGv/scfs.webp',
       jobTitle: 'Embedded Systems Engineer',
       datesWorked: 'Jun 2022 - Jun 2023',
-      responsibilities: 'Worked on real-time React-based Web3 trading application',
+      responsibilities: 'As a small startup team, where I was developing the embedded systems '
+                      + 'cross-platform mobile applications, integrated hardware devices, '
+                      + 'some backend systems and helped database design, where the projects involved supermarkets and an airport.',
       projects: [
         { name: 'Smart Cart', logo: 'https://i.ibb.co/pXLT815/cart.webp', description: '', },
         { name: 'Dullani', logo: 'https://i.ibb.co/D7bvLm3/dullani.png', description: '', },
         // { name: 'Hotel Door Event System', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
         // { name: 'RFID Tracking System', logo: 'https://i.ibb.co/SyjxvhT/Futr-ai.png', description: '', },
       ],
-      technologies: ['Python', 'C#', 'C++', 'Flutter'],
+      technologies: [
+        'Flutter',
+        'Python', 
+        'FastAPI', 
+        'PostgreSQL', 
+        'C++', 
+        'QT',
+        'ESP32', 
+        'MQTT',
+      ],
     },
     {
       company: 'Data Glaciar',
@@ -182,24 +223,40 @@ const config: SiteConfig = {
       companyLogo: 'https://i.ibb.co/HFqbvCw/data-glaciers.png',
       jobTitle: 'NLP and Industrial training Intern',
       datesWorked: 'Jun 2022 - Dec 2022',
-      responsibilities: '',
+      responsibilities: 'Gained hands-on experience in software project management, '
+                      + 'by successfully completing an end-to-end machine learning group project',
       projects: [
-        { name: 'Halaqh', logo: 'https://i.ibb.co/0ncKjFN/halaqh.png', description: '', },
+        { name: 'Halaqh', logo: 'https://i.ibb.co/0ncKjFN/halaqh.png', url: 'https://devpost.com/software/halaqh-platform', description: '', },
       ],
-      technologies: ['Python', 'AWS'],
+      technologies: [
+        'Python', 
+        'Flask', 
+        'Heroku',
+        'Streamlit',
+        'Docker', 
+        'AWS',
+        'Git', 
+      ],
     },
     {
       company: 'Zaka',
       companyUrl: 'https://zaka.ai',
-      companyLogo: 'https://shanab.me/_next/image?url=%2Fassets%2Fimages%2Fexperinces%2Fzaka.webp&w=128&q=75',
+      companyLogo: 'https://i.ibb.co/VpsZhgG/zaka.webp',
       jobTitle: 'Artificial Intelligence Intern',
       datesWorked: 'Mar 2021 - Jun 2021',
-      responsibilities: '',
-      projectType: 'Projects',
+      responsibilities: 'Nano degree program in Data Science and AI with certifications from Microsoft,'
+                      + 'developing a Psychiatrist Chatbot machine learning model, utilizing' 
+                      + 'Pandas, Numpy, Matplotlib, and Regular Expression Python libraries.',
+      // projectType: 'Projects',
       // projects: [
         // { name: 'Psychiatrist bot', logo: 'https://i.ibb.co/1R657nh/Wwarn.jpg', description: '', },
       // ],
-      technologies: ['Python'],
+      technologies: [
+        'Python',
+        'Numpy',
+        'Pandas',
+        'Azure',
+      ],
     },
     {
       company: 'Smart Methods',
@@ -207,8 +264,12 @@ const config: SiteConfig = {
       companyLogo: 'https://i.ibb.co/pyKnP7Q/smart-methods.png',
       jobTitle: 'Computer Engineering Intern',
       datesWorked: 'Nov 2020 - Dec 2020',
-      responsibilities: '',
-      technologies: ['Ubuntu'],
+      responsibilities: 'Robotics simulation and development with electronics and AI specialization',
+      technologies: [
+        'Ubuntu', 
+        'ROS',
+        'Multisim',
+      ],
     },
   ],
   projectComplimentaryData: [
@@ -498,19 +559,20 @@ const config: SiteConfig = {
   },
   techStack: {
     backend: [
+      // TODO: do the rfid and endpoint router
       {
         language: 'Python',
         projects: [
-          // 'RFID', 
+          'RFID', 
+          'Excel_Scripts',
           'Cryptography-KAU', 
           'Metallum-Extractor', 
-          'Excel_Scripts',
         ],
       },
       {
         language: 'Go',
         projects: [
-          // 'Endpoint-Router',
+          'Endpoint-Router',
         ],
       },
       {
@@ -573,7 +635,7 @@ const config: SiteConfig = {
       {
         language: 'Docker',
         projects: [
-          // 'Endpoint-Router',
+          'Endpoint-Router',
         ],
       },
     ],
@@ -585,19 +647,21 @@ const config: SiteConfig = {
       'GitHubActions', 
       'Grafana', 
       'Prometheus', 
-      'Influx',
+      'InfluxDB',
     ],
-    cloud: [
+    server: [
       'Ubuntu', 
       'CloudFlare', 
       'Azure', 
       'AWS',
+      'Nginx',
+      'NginxProxyManager',
     ],
     databases: [
       'PostgreSQL', 
       'SQLite', 
       'Redis', 
-      'MySQL',
+      // 'MySQL',
       // 'MariaDB',
     ],
     testing: [
@@ -611,9 +675,11 @@ const config: SiteConfig = {
       'Wireshark',
     ],
     networking: [
-      'Headscale', 
-      'Tailscale', 
-      // 'NginxProxyManager',
+      'Wireguard', 
+      // 'Headscale', 
+      // 'Tailscale', 
+      'MQTT', 
+      'Mosquitto', 
     ],
   },
 };
