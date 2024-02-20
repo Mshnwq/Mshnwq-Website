@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { config } from '$src/store/Config';
+  import { t } from '$src/store/Language';
   import ThemeSwitcher from '$src/components/ThemeSwitcher.svelte';
   import LanguageSwitcher from '$src/components/LanguageSwitcher.svelte';
 
@@ -23,8 +24,10 @@
         title={navLink.description || navLink.label}
         data-sveltekit-preload-data="hover"
         style={`--accent: ${findRouteColor(navLink.route)};`}
-        class:active={$page.url.pathname === navLink.route}>{navLink.label}</a
+        class:active={$page.url.pathname === navLink.route}
       >
+        {$t(`pages.${navLink.label.toLocaleLowerCase()}`)}
+      </a>
     {/each}
     <ThemeSwitcher />
     <LanguageSwitcher />

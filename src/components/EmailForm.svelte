@@ -4,6 +4,7 @@
   import Loading from '$src/components/Loading.svelte';
   import Heading from '$src/components/Heading.svelte';
   import { config } from '$src/store/Config';
+  import { t } from '$src/store/Language';
 
   // Email form values
   let name: string = '';
@@ -85,7 +86,7 @@
   name="website-contact-form"
   data-netlify="true"
 >
-  <Heading level="h2" color="var(--accent)">send_message</Heading>
+  <Heading level="h2" color="var(--accent-4)">{$t('contact.email')}</Heading>
   {#if showMailForm && mailSendStatus != 'sending'}
     <div class="user-deets">
       <div class="input-group">

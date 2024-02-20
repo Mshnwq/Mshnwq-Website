@@ -20,7 +20,7 @@
     return (
       config.routeLinks?.find((rc: { route: string; }) => rc.route === path)?.color ||
       $themeColors['accent-1'] ||
-      '#ff0099'
+      '#f44336'
     );
   };
 

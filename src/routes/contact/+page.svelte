@@ -2,6 +2,7 @@
   import type { SupportedSocials, UserSocial } from '$src/types/Socials';
   import { socialNetworks } from '$src/helpers/constants';
   import { config } from '$src/store/Config';
+  import { t } from '$src/store/Language';
 
   import SocialLink from '$src/components/SocialLink.svelte';
   import Heading from '$src/components/Heading.svelte';
@@ -32,7 +33,7 @@
 
 <section class="main">
   <div class="social-wrapper">
-    <Heading level="h2" color="var(--accent)">lets_connect</Heading>
+    <Heading level="h2" color="var(--accent-4)">{$t('contact.connect')}</Heading>
     <!-- Links to social media profiles -->
     <div class="social-buttons">
       {#each socials.slice(0, numSocialsToDisplay) as social}
@@ -48,7 +49,7 @@
       </button>
     {/if}
   </div>
-  <!-- <EmailForm /> -->
+  <EmailForm />
   <PGPKeys />
 </section>
 

@@ -1,6 +1,6 @@
 <script lang="ts">
   export let showOnPx = 150;
-  export let color = 'var(--accent)';
+  export let color: string;
   let hidden = true;
 
   function goTop() {

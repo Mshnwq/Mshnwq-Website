@@ -26,6 +26,15 @@ const translations: Translations = {
     'blog.results.none-2':
       'Try selecting more feeds in the dropdown, or broadening your search term',
     'blog.error': 'Oh no, something real bad happened',
+
+    // About page text
+    'about.text': '',
+    'about.experience': '',
+
+    // Contact page text
+    'contact.connect': 'Lets Connect',
+    'contact.email': 'Send a Message',
+    'contact.keys': 'Keys',
   },
   // French
   fr: {
@@ -52,6 +61,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Essayez de sélectionner plus de flux dans le menu déroulant, ou élargissez votre terme de recherche',
     'blog.error': 'Oh non, quelque chose de vraiment mauvais est arrivé',
+
+    // Texte de la page de contact
+    'contact.connect' : 'Connectons-nous',
+    'contact.email' : 'Envoyer un message',
+    'contact.keys' : 'Clés',
   },
   // German
   de: {
@@ -78,6 +92,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Versuchen Sie, mehr Feeds im Dropdown-Menü auszuwählen oder Ihren Suchbegriff zu erweitern.',
     'blog.error': 'Oh nein, etwas ist wirklich schiefgelaufen',
+
+    // Text der Kontaktseite
+    'contact.connect': "Let's Connect",
+    'contact.email': 'Eine Nachricht senden',
+    'contact.keys': 'Schlüssel',
   },
   // Polish
   pl: {
@@ -104,6 +123,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Spróbuj wybrać więcej kanałów w rozwijanym menu lub poszerzyć swoje słowo wyszukiwania',
     'blog.error': 'O nie, coś naprawdę złego się stało',
+
+    // Tekst strony kontaktowej
+    'contact.connect': 'Połączmy się',
+    'contact.email': 'Wyślij wiadomość',
+    'contact.keys': 'Klucze',
   },
   // Dutch
   nl: {
@@ -130,6 +154,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Probeer meer feeds te selecteren in het dropdownmenu of verbreed uw zoekterm',
     'blog.error': 'O nee, er is iets heel ergs gebeurd',
+
+    // Contactpaginatekst
+    'contact.connect': 'Laten we verbinding maken',
+    'contact.email': 'Verstuur een bericht',
+    'contact.keys': 'Sleutels',
   },
   // Romanian
   ro: {
@@ -156,6 +185,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Încearcă să selectezi mai multe surse în meniul derulant sau să îți extinzi termenul de căutare',
     'blog.error': 'O, nu, ceva rău s-a întâmplat',
+
+    // Textul paginii de contact
+    'contact.connect': 'Permitem să ne conectăm',
+    'contact.email': 'Trimite un mesaj',
+    'contact.keys': 'Chei',
   },
   // Russian
   ru: {
@@ -182,6 +216,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Попробуйте выбрать больше источников в выпадающем меню или расширить ваш поисковый запрос',
     'blog.error': 'О нет, что-то пошло не так',
+
+    // Текст страницы контактов
+    'contact.connect': 'Давайте соединимся',
+    'contact.email': 'Отправить сообщение',
+    'contact.keys': 'Ключи',
   },
   // Spanish
   es: {
@@ -208,6 +247,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Intente seleccionar más fuentes en el menú desplegable o ampliar su término de búsqueda',
     'blog.error': 'Oh no, algo realmente malo sucedió',
+
+    // Texto de la página de contacto
+    'contact.connect': 'Vamos a conectarnos',
+    'contacto.email': 'Enviar un mensaje',
+    'contacto.keys': 'Claves',
   }, 
   // Italian
   it: {
@@ -234,6 +278,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Prova a selezionare più feed nel menu a discesa o ad allargare il termine di ricerca',
     'blog.error': 'Oh no, è successo qualcosa di veramente brutto',
+
+    // Testo della pagina dei contatti
+    'contact.connect': 'Connettiamoci',
+    'contact.email': 'Invia un messaggio',
+    'contact.keys': 'Chiavi',
   },
   // Swedish
   se: {
@@ -260,6 +309,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Försök att välja fler flöden i rullgardinsmenyn eller bredda din sökterm',
     'blog.error': 'Åh nej, något riktigt dåligt hände',
+
+    // Text på kontaktsidan
+    'contact.connect': 'Låter ansluta',
+    'contact.email': 'Skicka ett meddelande',
+    'contact.keys': 'Nycklar',
   },
   // Norwegian
   no: {
@@ -286,6 +340,11 @@ const translations: Translations = {
     'blog.results.none-2':
       'Prøv å velge flere kilder i rullegardinmenyen, eller utvid søket ditt',
     'blog.error': 'Å nei, noe virkelig dårlig skjedde',
+
+    // Kontaktsidetekst
+    'contact.connect': 'La oss koble til',
+    'contact.email': 'Send en melding',
+    'contact.keys': 'Nøkler',
   }, 
 };
 

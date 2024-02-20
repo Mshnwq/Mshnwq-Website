@@ -1,6 +1,7 @@
 <script>
   import { slide } from 'svelte/transition';
   import { config } from '$src/store/Config';
+  import { t } from '$src/store/Language';
   import Heading from '$src/components/Heading.svelte';
 
   const pgpPublicKey = config.contact.pgpPublicKey;
@@ -40,7 +41,7 @@
 </script>
 
 <div class="pgp-container">
-  <Heading level="h2" color="var(--accent)">keys</Heading>
+  <Heading level="h2" color="var(--accent-4)">{$t('contact.keys')}</Heading>
 
   {#each keys as key}
     <div class="key-row">

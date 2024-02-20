@@ -30,7 +30,9 @@
 
 <!-- Page title -->
 <div class="heading">
-  <Heading level="h2" size="2.5rem">{$t('pages.about')}</Heading>
+  <Heading level="h2" color="var(--accent-3)" size="2.5rem">
+    {$t('pages.about')}
+  </Heading>
 </div>
 
 <!-- Bio paragraphs -->
@@ -47,7 +49,9 @@
     <img src={picture} alt="Users profile" />
     <div class="pages">
       {#each morePages as page}
-        <a href={page.route} style={`--page-color: ${page.color};`}>{page.label}</a>
+        <a href={page.route} style={`--page-color: ${page.color};`}>
+           {$t(`pages.${page.label.toLocaleLowerCase()}`)}
+        </a>
       {/each}
     </div>
   </section>
