@@ -18,8 +18,14 @@ export const _getTwitterInfo = async (username: string) => {
         const { public_metrics } = stats.data;
         const { followers_count, tweet_count } = public_metrics;
         const metrics: SocialMetric[] = [
-          { label: 'Followers', value: followers_count.toLocaleString() },
-          { label: 'Tweets', value: tweet_count.toLocaleString() },
+          { 
+            label: 'Followers', 
+            value: followers_count.toLocaleString() 
+          },
+          { 
+            label: 'Tweets', 
+            value: tweet_count.toLocaleString() 
+          },
         ];
         return metrics;
       }
@@ -36,7 +42,10 @@ export const _getRedditInfo = async (username: string) => {
       if (stats.data && stats.data.link_karma) {
         const { total_karma, created_utc } = stats.data;
         const metrics: SocialMetric[] = [
-          { label: 'Karma', value: total_karma.toLocaleString() },
+          { 
+            label: 'Karma', 
+            value: total_karma.toLocaleString() 
+          },
           {
             label: 'Joined',
             value: new Date(created_utc * 1000).getFullYear(),
@@ -62,8 +71,14 @@ export const _getGithubInfo = async (username: string) => {
       if (stats.public_repos) {
         const { public_repos, followers } = stats;
         const metrics: SocialMetric[] = [
-          { label: 'Repos', value: public_repos.toLocaleString() },
-          { label: 'Followers', value: followers.toLocaleString() },
+          { 
+            label: 'Repos', 
+            value: public_repos.toLocaleString() 
+          },
+          { 
+            label: 'Followers', 
+            value: followers.toLocaleString() 
+          },
         ];
         return metrics;
       }
@@ -81,7 +96,10 @@ export const _getStackOverflowInfo = async (username: string) => {
       if (stats.items && stats.items[0]) {
         const { reputation, creation_date } = stats.items[0];
         const metrics: SocialMetric[] = [
-          { label: 'Rep', value: reputation.toLocaleString() },
+          { 
+            label: 'Rep', 
+            value: reputation.toLocaleString()
+          },
           {
             label: 'Joined',
             value: new Date(creation_date * 1000).getFullYear(),
@@ -106,7 +124,26 @@ export const _getKeybaseInfo = async (username: string) => {
             label: 'Joined',
             value: new Date(basics.ctime * 1000).getFullYear(),
           },
-          { label: 'Devices', value: Object.keys(devices).length },
+          { 
+            label: 'Devices', 
+            value: Object.keys(devices).length
+          },
+        ];
+        return metrics;
+      }
+      return [];
+    })
+    .catch(() => []);
+};
+
+export const _getDockerhubInfo = async (username: string) => {
+  const dockerHubEndpoint = ``;
+  return await fetch(dockerHubEndpoint)
+    .then((res) => res.json())
+    .then((stats) => {
+      if (stats && stats.them && stats.them[0]) {
+        const { basics, devices } = stats.them[0];
+        const metrics: SocialMetric[] = [
         ];
         return metrics;
       }
@@ -123,6 +160,7 @@ export const load = async () => {
     GitHub: githubUn,
     StackOverflow: stackoverflowUn,
     KeyBase: keybaseUn,
+    DockerHub: dockerhubUn,
   } = config.contact.socials;
   // Trigger fetch stats for each social
   const [
@@ -131,12 +169,14 @@ export const load = async () => {
     github,
     stackoverflow,
     keybase,
+    dockerhub,
   ] = await Promise.all([
     _getTwitterInfo(twitterUn),
     _getRedditInfo(redditUn),
     _getGithubInfo(githubUn),
     _getStackOverflowInfo(stackoverflowUn),
     _getKeybaseInfo(keybaseUn),
+    _getDockerhubInfo(dockerhubUn),
   ]);
   return {
     props: {
@@ -145,6 +185,7 @@ export const load = async () => {
       github,
       stackoverflow,
       keybase,
+      dockerhub,
     },
   };
 };
