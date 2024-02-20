@@ -137,13 +137,17 @@ export const _getKeybaseInfo = async (username: string) => {
 };
 
 export const _getDockerhubInfo = async (username: string) => {
-  const dockerHubEndpoint = ``;
+  const dockerHubEndpoint = `https://hub.docker.com/v2/users/${username}`;
   return await fetch(dockerHubEndpoint)
     .then((res) => res.json())
     .then((stats) => {
-      if (stats && stats.them && stats.them[0]) {
-        const { basics, devices } = stats.them[0];
+    if (stats && stats.date_joined) {
+        const { date_joined } = stats;
         const metrics: SocialMetric[] = [
+          {
+            label: 'Joined',
+            value: new Date(date_joined).getFullYear(),
+          },
         ];
         return metrics;
       }
@@ -151,6 +155,7 @@ export const _getDockerhubInfo = async (username: string) => {
     })
     .catch(() => []);
 };
+
 
 export const load = async () => {
   const {
