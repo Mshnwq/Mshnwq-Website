@@ -42,4 +42,11 @@ export const socialNetworks: SocialNetwork[] = [
     link: 'https://keybase.io/',
     noAt: true,
   },
+  {
+    name: 'DockerHub',
+    icon: 'docker',
+    tone: '#0db7ed',
+    link: 'https://hub.docker.com/u/',
+    noAt: true,
+  },
 ];

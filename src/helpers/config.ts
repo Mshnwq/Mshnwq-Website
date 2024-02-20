@@ -469,8 +469,9 @@ const config: SiteConfig = {
       Reddit: 'mshnwq',
       StackOverflow: '21552622/mshnwq',
       KeyBase: 'Mshnwq',
+      DockerHub: 'mshnwq',
     },
-    socialButtonLimit: 6,
+    socialButtonLimit: 7,
     // mailerConfig: {
     //   service_id: 'gmail',
     //   template_id: 'website-contact-form',
@@ -542,7 +543,7 @@ const config: SiteConfig = {
 
       `After graduation, I began working in infrastructure and IT systems, 
       delving deep into Linux, cloud computing, and system administration. 
-      I quickly found my niche and became a Co-Founder of <a href="https://nyrn-sa.com">Nyrn</a> an ERP consultancy, 
+      I quickly found my niche and became a Co-Founder of <a href="https://nyrna-sa.com">Nyrna</a> an ERP consultancy, 
       leveraging my expertise to streamline business operations.
       Additionally, I'm Co-Founder and CTO at <a href="https://taskmasters-sa.com">Taskmasters</a> a consulting firm, 
       where I oversee technology strategies within the groups holdings.`,
@@ -550,7 +551,7 @@ const config: SiteConfig = {
       `I love Linux and the open source community, specially security and privacy-respecting software. You can find my
       <a href="https://github.com/Mshnwq/dotfiles">dotfiles setup</a> which I'm always tweaking to improve and master my toolkit.
       I also maintain a small homelab to enhance my system administration skills and host services for privacy and security reasons. 
-      Some of my open-source projects include <a href="https://github.com/Mshnwq/metallum-api">Metallum API</a>, <a href="https://devpost.com/software/halaqh-platform">Halaqh</a>, and <a href="https://github.com/Mshnwq/Cryptography-KAU">KAU Cryptography</a>.
+      Some of my open-source projects include <a href="https://github.com/Mshnwq/Metallum-Extractor">Metallum API</a>, <a href="https://devpost.com/software/halaqh-platform">Halaqh</a>, and <a href="https://github.com/Mshnwq/Cryptography-KAU">KAU Cryptography</a>.
       In my free time, I enjoy sharing what I'v learned on my <a href="https://blog.mshnwq.com">Blog</a> aswell.`, 
 
       `Beyond tech, I'm a (cine-biblio-audio)phile, and a health nut :)`,
