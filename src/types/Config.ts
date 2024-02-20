@@ -2,7 +2,7 @@ import type { RssUrlList } from '$src/types/RssXml';
 import type { Usernames } from '$src/types/Socials';
 import type { Locale } from '$src/types/Language';
 
-export type Theme = 'dark' | 'light' | 'system' | 'callisto' | 'crimson';
+export type Theme = 'dark' | 'light' | 'system' | 'matrix' | 'callisto' | 'crimson';
 
 export interface TechStackItem {
   language: string;
