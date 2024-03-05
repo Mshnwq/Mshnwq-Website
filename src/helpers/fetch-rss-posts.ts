@@ -18,6 +18,7 @@ export const fetchPostsFromRss = (
   RSS_FEEDS: RssUrlList,
   svelteFetch?: () => Promise<Response>
 ) => {
+
   // Returns first matching value, from an array of possible keys
   const findValueFromKeys = (dataMass: NotSureYet, keys: string[]): string => {
     const keyWithValue = keys.find((key: string) => dataMass[key]);
@@ -60,28 +61,34 @@ export const fetchPostsFromRss = (
   // So we have to check which properties are available for each attribute
   const normalizePosts = (rawPosts: Array<NotSureYet>): RssPosts => {
     const rssPosts: RssPost[] = [];
-    rawPosts.forEach((rawPost: NotSureYet) => {
-      const post: RssPost = {
-        title: rawPost.title || makeBackupTitle(rawPost),
-        description: findValueFromKeys(rawPost, [
-          'content',
-          'content:encoded',
-          'description',
-          'summary',
-        ]),
-        author: getAuthor(rawPost),
-        pubDate: findValueFromKeys(rawPost, [
-          'pubDate',
-          'published',
-          'date',
-          'updated',
-        ]),
-        link: findValueFromKeys(rawPost, ['link', 'guid']),
-        tags: findValueFromKeys(rawPost, ['tags', 'category']),
-        thumbnail: findValueFromKeys(rawPost, ['media:thumbnail']) || '',
-      };
-      rssPosts.push({ ...post, ...appendAdditionalInfo(post) });
-    });
+    // Check if rawPosts is an array before iterating over it
+    if (Array.isArray(rawPosts)) {
+      rawPosts.forEach((rawPost: NotSureYet) => {
+        const post: RssPost = {
+          title: rawPost.title || makeBackupTitle(rawPost),
+          description: findValueFromKeys(rawPost, [
+            'content',
+            'content:encoded',
+            'description',
+            'summary',
+          ]),
+          author: getAuthor(rawPost),
+          pubDate: findValueFromKeys(rawPost, [
+            'pubDate',
+            'published',
+            'date',
+            'updated',
+          ]),
+          link: findValueFromKeys(rawPost, ['link', 'guid']),
+          tags: findValueFromKeys(rawPost, ['tags', 'category']),
+          thumbnail: findValueFromKeys(rawPost, ['thumbnail', 'media:thumbnail']) || '',
+        };
+        rssPosts.push({ ...post, ...appendAdditionalInfo(post) });
+      });
+    } else {
+      console.error("rawPosts is not an array.");
+      rssPosts.push(rawPosts);
+    }
     return rssPosts;
   };
 
@@ -110,6 +117,7 @@ export const fetchPostsFromRss = (
 
   // Fetches data from an RSS endpoint, and initiates the parsing of the XML
   const fetchSinglePost = async (rssUrl: string) => {
+  //  console.log(`Fetching single post from ${rssUrl}`);
     const fetchMethod = svelteFetch || fetch;
     return fetchMethod(rssUrl)
       .then((response) => response.text())
@@ -118,12 +126,16 @@ export const fetchPostsFromRss = (
 
   // Initiates requests for an array of RSS feeds
   const fetchAllPosts = async (feeds: RssUrlList): Promise<RssPost[]> => {
+  //  console.log("Fetching all posts...");
     return await Promise.all(
       // Fetch data from all RSS feeds in array
       feeds.map((feed) => fetchSinglePost(feed.url))
     ).then(
       // Flattern, de-duplicate and sort combined results
-      (result) => sortByDate(removeDuplicates(result.flat()))
+      (result) => {
+    //    console.log(result);
+        return sortByDate(removeDuplicates(result.flat()))
+      }
     );
   };
 
