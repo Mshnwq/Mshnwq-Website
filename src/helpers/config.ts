@@ -8,27 +8,24 @@ const config: SiteConfig = {
   baseUrl: 'https://mshnwq.com',
   initialFeeds: [
     { 
-      label: 'Blog', 
-      url: 'https://raw.githubusercontent.com/Lissy93/feeds/main/blog.atom' 
+      label: 'Mshnwq Blog', 
+      url: 'https://blog.mshnwq.com/index.xml'
+      //url: 'http://localhost:1313/index.xml'
+      // url: 'http://localhost:1313/index.json'
+      // url: 'https://notes.aliciasykes.com/feed'
     }
   ],
   additionalFeeds: [
     { 
-      label: 'Blog', 
-      url: 'https://blog.mshnwq.com/feed'
+      label: 'Mshnwq Blog', 
+      url: 'https://blog.mshnwq.com/index.xml'
+      // url: 'http://localhost:1313/index.xml'
     },
-    {
-      label: 'GitHub',
-      url: 'https://raw.githubusercontent.com/Mshnwq/feeds/main/github.atom',
-    },
-    { 
-      label: 'Twitter', 
-      url: 'https://raw.githubusercontent.com/Mshnwq/feeds/main/twitter.atom'
-    },
-    {
-      label: 'YouTube',
-      url: 'https://raw.githubusercontent.com/Mshnwq/feeds/main/youtube.atom',
-    },
+    // { 
+    //   label: 'Alicia Blog', 
+    //   // url: 'https://blog.mshnwq.com/feed'
+    //   url: 'https://notes.aliciasykes.com/feed'
+    // },
   ],
   routeLinks: [
     { label: 'Home',
@@ -418,62 +415,6 @@ const config: SiteConfig = {
     },
   ],
   postComplimentaryData: [
-    {
-      postRef: '50 ways to bring in extra cash as a developer',
-      thumbnail: 'https://i.ibb.co/DDQBHvL/developer-side-hustles.png',
-    },
-    {
-      postRef: 'CLI tools you cant live without',
-      thumbnail: 'https://i.ibb.co/F4THZ2T/cli-tools-banner.png',
-    },
-    {
-      postRef: '20 git commands',
-      thumbnail: 'https://i.ibb.co/yqtrTTS/git-commands-banner.png',
-    },
-    {
-      postRef: 'useful css resources',
-      thumbnail: 'https://i.ibb.co/CMxy3tz/css-resources-2.png',
-    },
-    {
-      postRef: 'my top 50 windows apps',
-      thumbnail: 'https://i.ibb.co/nmPRGgp/open-source-windows-apps.png',
-    },
-    {
-      postRef: 'my top 50 android apps',
-      thumbnail: 'https://i.ibb.co/cc8WP4K/App-icons-banner-medium.png',
-    },
-    {
-      postRef: 'pimping up your duckduckgo',
-      thumbnail: 'https://i.ibb.co/6XYydtq/Duck-Duck-Go-Themes.png',
-    },
-    {
-      postRef: 'custom styling for listed',
-      thumbnail: 'https://i.ibb.co/dMh1y13/listed-dark.png',
-    },
-    {
-      postRef: 'fun with realtime data',
-      thumbnail: 'https://i.ibb.co/HqJ77Mf/Fun-with-live-data-banner.png',
-    },
-    {
-      postRef: 'fave youtube chanels',
-      thumbnail: 'https://i.ibb.co/185MLZq/youtube-channels-banner.png',
-    },
-    {
-      postRef: 'top 25 raspberry pi projects',
-      thumbnail: 'https://i.ibb.co/LP1wZtc/Top-Raspberry-Pi-Projects.png',
-    },
-    {
-      postRef: 'using espanso to boost efficiency',
-      thumbnail: 'https://i.ibb.co/6W1Bqyz/espanso-config-banner.png',
-    },
-    {
-      postRef: 'hello world',
-      thumbnail: 'https://i.ibb.co/0rfWV1f/DSCN0566-1.jpg',
-    },
-    {
-      postRef: 'dashy a selfhosted homelab dashboard',
-      thumbnail: 'https://i.ibb.co/c6kTRch/dashy-theme.png',
-    },
     { postRef: '', thumbnail: '' },
   ],
   contact: {
@@ -578,12 +519,11 @@ const config: SiteConfig = {
   },
   techStack: {
     backend: [
-      // TODO: do the rfid and endpoint router
       {
         language: 'Python',
         projects: [
           'RFID', 
-          'Excel_Scripts',
+          'Excel-Scripts',
           'Cryptography-KAU', 
           'Metallum-Extractor', 
         ],
@@ -605,20 +545,20 @@ const config: SiteConfig = {
       {
         language: 'Svelte',
         projects: [
-          'mshnwq-website',
+          'Mshnwq-Website',
         ],
       },
       {
         language: 'QT',
         projects: [
           'Metallum-Extractor', 
-          'shopping_cart_app',
+          'Shopping-Cart-App',
         ],
       },
       {
         language: 'Flutter',
         projects: [
-          'shopping_cart_app',
+          'Shopping-Cart-App',
         ],
       },
     ],
@@ -626,15 +566,15 @@ const config: SiteConfig = {
       {
         language: 'C++',
         projects: [
-          'Golden_Rat', 
+          'Golden-Rat', 
           'Minix3-Project',
-          'shoppingCart_Embedded',
+          'Shopping-Cart-Embedded',
         ],
       },
       {
         language: 'Verilog',
         projects: [
-          'FPGA_RSA_UHF_RFID',
+          'FPGA-RSA-UHF-RFID',
         ],
       },
       {
@@ -655,6 +595,7 @@ const config: SiteConfig = {
         language: 'Docker',
         projects: [
           'Endpoint-Router',
+          'Mshnwq-Website',
         ],
       },
     ],
