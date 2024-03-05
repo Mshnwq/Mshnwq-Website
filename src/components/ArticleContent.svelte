@@ -1,9 +1,21 @@
 <script lang="ts">
   export let content: string;
+  export function removeAnchorTags(htmlContent: string): string {
+    const anchorRegex = /<a\s+(?:[^>]*?\s+)?href="([^"]*)"(?:\s+[^>]*)*>(.*?)<\/a>/g;
+    return htmlContent.replace(anchorRegex, '');
+  }
+  export function removeHugoShortcodes(htmlContent: string): string {
+    const svgRegex = /<svg\b[^>]*>.*?<\/svg>/gs;
+    const removedShortcode = htmlContent.replace(svgRegex, '');
+    return removedShortcode;
+  }
+  export function processContent(htmlContent: string): string {
+    return removeAnchorTags(removeHugoShortcodes(htmlContent));
+}
 </script>
 
 <main class="article-content">
-  {@html content}
+  {@html processContent(content)}
 </main>
 
 <style lang="scss">
@@ -35,7 +47,10 @@
       font-weight: 600;
       margin: 1rem 0;
     }
-
+o
+    :global(h1) {
+      font-size: 2rem;
+    }
     :global(h2) {
       font-size: 1.8rem;
     }
