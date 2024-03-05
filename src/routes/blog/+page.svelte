@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onDestroy, onMount } from 'svelte'
   import { goto } from '$app/navigation';
   import { t } from '$src/store/Language';
   import {
@@ -23,10 +24,19 @@
 
   blogStore.set(data.posts);
 
-  rssFeedUrls.subscribe(() => {
-    _loadPosts();
+  onMount(() => {
+    try { 
+      rssFeedUrls.subscribe(() => {
+        _loadPosts();
+      });
+    }
+    catch (e) { console.warn('MatrixEffect failed to load', e); }
   });
-
+  
+  onDestroy(() => {
+    console.log('Unmounted Blog page');
+  });
+  
   let searchInputRef: any | HTMLElement; // Has to be any, as used in context of <svelte:element>
 
   /**
@@ -90,10 +100,12 @@
   <div>
     {#if $searchTerm}
       <div class="results-info">
-        <p>Showing {$filtered.length} results for '<i>{$searchTerm}</i>'</p>
-        <button class="clear-search" on:click={cancelSearch}
-          >✗ {$t('blog.search.clear')}</button
-        >
+        <p>
+          Showing {$filtered.length} results for '<i>{$searchTerm}</i>'
+        </p>
+        <button class="clear-search" on:click={cancelSearch}>
+          ✗ {$t('blog.search.clear')}
+        </button>
       </div>
     {/if}
   </div>
