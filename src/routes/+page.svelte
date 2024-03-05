@@ -21,7 +21,7 @@
   });
 
   onDestroy(() => {
-    console.log('Unmounted home page');
+    console.log('Unmounted Home page');
   });
 
   const userSocials = Object.keys(config.contact.socials);

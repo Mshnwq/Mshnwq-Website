@@ -129,15 +129,17 @@
 
 {#if postStatus === PostStatus.Ready && postToRender}
   <article>
-    <button class="back-button" on:click={goBackToPostPage}>← Back</button>
+    <button class="back-button" on:click={goBackToPostPage}>
+      ← Back
+    </button>
     <div class="title">
       <Heading
         level="h1"
         size="2.2rem"
-        font="RedHatText"
         commandStyle={false}
         color="var(--foreground)"
-      >
+        font="RedHatText"
+        >
         {postToRender.title ||
           formatDate(postToRender.pubDate) ||
           'Un-named Update'}
@@ -159,8 +161,10 @@
           <a
             href={postToRender.link}
             title="Read: {postToRender.title}"
-            target="_blank">original</a
+            target="_blank"
           >
+            original
+          </a>
         {/if}
       </p>
     </div>
@@ -173,7 +177,7 @@
 {:else if postStatus === PostStatus.NotFound}
   <NotFound message="Post not Found" />
 {:else}
-  <h2>Big Error</h2>
+  <h2>Big Error 💥</h2>
 {/if}
 
 <style lang="scss">
