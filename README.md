@@ -1,3 +1,4 @@
+[![DockerHub](https://img.shields.io/badge/DockerHub-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/mshnwq/mshnwq-website)
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
