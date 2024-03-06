@@ -37,5 +37,9 @@ PACKAGES=(
 pnpm install "${PACKAGES[@]}"
 
 # Output success message
-echo "Success! Now you can use:"
-echo "pnpm run dev -- --open"
+echo "Success! Node packages are setup now!"
+echo "-------------------------------------"
+echo "you can now run it develepor mode with:"
+echo "$ pnpm run dev -- --open"
+echo "or just build the app and preview it"
+echo "$ pnpm run build && pnpm run preview"

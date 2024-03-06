@@ -3,6 +3,7 @@ import staticAdapter from '@sveltejs/adapter-static';
 import netlifyAdapter from '@sveltejs/adapter-netlify';
 import vercelAdapter from '@sveltejs/adapter-vercel';
 import nodeAdapter from '@sveltejs/adapter-node';
+
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 let selectedAdapter;
