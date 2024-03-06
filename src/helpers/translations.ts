@@ -35,6 +35,9 @@ const translations: Translations = {
     'contact.connect': 'Lets Connect',
     'contact.email': 'Send a Message',
     'contact.keys': 'Keys',
+    'contact.email.name' : 'Name',
+    'contact.email.message' : 'Message',
+    'contact.email.send' : 'Send',
   },
   // French
   fr: {
@@ -66,6 +69,9 @@ const translations: Translations = {
     'contact.connect' : 'Connectons-nous',
     'contact.email' : 'Envoyer un message',
     'contact.keys' : 'Clés',
+    'contact.email.name' : 'Nom',
+    'contact.email.message' : 'Message',
+    'contact.email.send' : 'Envoyer',
   },
   // German
   de: {
@@ -97,6 +103,9 @@ const translations: Translations = {
     'contact.connect': "Let's Connect",
     'contact.email': 'Eine Nachricht senden',
     'contact.keys': 'Schlüssel',
+    'contact.email.name' : 'Name',
+    'contact.email.message' : 'Nachricht',
+    'contact.email.send' : 'Schicken',
   },
   // Polish
   pl: {
@@ -128,6 +137,9 @@ const translations: Translations = {
     'contact.connect': 'Połączmy się',
     'contact.email': 'Wyślij wiadomość',
     'contact.keys': 'Klucze',
+    'contact.email.name' : 'nazwa',
+    'contact.email.message' : 'wiadomość',
+    'contact.email.send' : 'wysłać',
   },
   // Dutch
   nl: {
@@ -159,6 +171,9 @@ const translations: Translations = {
     'contact.connect': 'Laten we verbinding maken',
     'contact.email': 'Verstuur een bericht',
     'contact.keys': 'Sleutels',
+    'contact.email.name' : 'Namm',
+    'contact.email.message' : 'Bericht',
+    'contact.email.send' : 'Versturen',
   },
   // Romanian
   ro: {
@@ -190,6 +205,9 @@ const translations: Translations = {
     'contact.connect': 'Permitem să ne conectăm',
     'contact.email': 'Trimite un mesaj',
     'contact.keys': 'Chei',
+    'contact.email.name' : 'Nume',
+    'contact.email.message' : 'Mesaj',
+    'contact.email.send' : 'Trimite',
   },
   // Russian
   ru: {
@@ -221,6 +239,9 @@ const translations: Translations = {
     'contact.connect': 'Давайте соединимся',
     'contact.email': 'Отправить сообщение',
     'contact.keys': 'Ключи',
+    'contact.email.name' : 'имя',
+    'contact.email.message' : 'сообщение',
+    'contact.email.send' : 'отправлять',
   },
   // Spanish
   es: {
@@ -252,6 +273,9 @@ const translations: Translations = {
     'contact.connect': 'Vamos a conectarnos',
     'contacto.email': 'Enviar un mensaje',
     'contacto.keys': 'Claves',
+    'contact.email.name' : 'Nombre',
+    'contact.email.message' : 'Mensaje',
+    'contact.email.send' : 'Enviar',
   }, 
   // Italian
   it: {
@@ -283,6 +307,9 @@ const translations: Translations = {
     'contact.connect': 'Connettiamoci',
     'contact.email': 'Invia un messaggio',
     'contact.keys': 'Chiavi',
+    'contact.email.name' : 'Nome',
+    'contact.email.message' : 'Messagio',
+    'contact.email.send' : 'Inviare',
   },
   // Swedish
   se: {
@@ -314,6 +341,9 @@ const translations: Translations = {
     'contact.connect': 'Låter ansluta',
     'contact.email': 'Skicka ett meddelande',
     'contact.keys': 'Nycklar',
+    'contact.email.name' : 'Namn',
+    'contact.email.message' : 'Meddelande',
+    'contact.email.send' : 'Skicka',
   },
   // Norwegian
   no: {
@@ -345,6 +375,9 @@ const translations: Translations = {
     'contact.connect': 'La oss koble til',
     'contact.email': 'Send en melding',
     'contact.keys': 'Nøkler',
+    'contact.email.name' : 'Navn',
+    'contact.email.message' : 'beskjed',
+    'contact.email.send' : 'Sende',
   }, 
 };
 

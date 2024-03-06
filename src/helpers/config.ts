@@ -3,14 +3,14 @@ import type { SiteConfig } from '$src/types/Config';
 const config: SiteConfig = {
   title: 'Hayan Al-Machnouk',
   nickname: 'Mshnwq',
-  description: '',
+  description: 'Mshnwq Social Website',
   source: 'https://github.com/Mshnwq/mshnwq-website',
   baseUrl: 'https://mshnwq.com',
   initialFeeds: [
     { 
       label: 'Mshnwq Blog', 
-      url: 'https://blog.mshnwq.com/index.xml'
-      //url: 'http://localhost:1313/index.xml'
+      // url: 'https://blog.mshnwq.com/feed'
+      url: 'http://localhost:1313/index.xml'
       // url: 'http://localhost:1313/index.json'
       // url: 'https://notes.aliciasykes.com/feed'
     }
@@ -18,8 +18,8 @@ const config: SiteConfig = {
   additionalFeeds: [
     { 
       label: 'Mshnwq Blog', 
-      url: 'https://blog.mshnwq.com/index.xml'
-      // url: 'http://localhost:1313/index.xml'
+      // url: 'https://blog.mshnwq.com/feed'
+      url: 'http://localhost:1313/index.xml'
     },
     // { 
     //   label: 'Alicia Blog', 
@@ -431,12 +431,15 @@ const config: SiteConfig = {
       DockerHub: 'mshnwq',
     },
     socialButtonLimit: 7,
-    // mailerConfig: {
-    //   service_id: 'gmail',
-    //   template_id: 'website-contact-form',
-    //   user_id: 'user_K6F041q1dQvz8SJLSOZCR',
-    //   template_params: {},
-    // },
+    mailerConfig: {
+      service_id: 'service_38dslqw',
+      template_id: 'template_buw9joh',
+      user_id: 'wfdKi7yOijelyW31W',
+      template_params: {},
+        // from_name: "null name",
+        // reply_email: "null email",
+        // message_body: "null message",
+    },
     pgpKeyLink: 'https://keybase.io/mshnwq/pgp_keys.asc?fingerprint=83736ac1763828d8260a91a21073ad7f49bc4421',
     pgpPublicKey: `
       -----BEGIN PGP PUBLIC KEY BLOCK-----

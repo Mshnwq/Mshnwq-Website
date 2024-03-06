@@ -25,7 +25,7 @@
     } else {
       waitingFor = times[currentIndex + 1];
     }
-  }, 2000);
+  }, 2500);
 
   // Clear interval when component finished with
   onDestroy(() => {
@@ -34,15 +34,25 @@
 </script>
 
 <div class="gotta-be-patient">
-  <h1>{title || 'Loading'}</h1>
+  <h1>
+    {title || 'Loading'}
+  </h1>
   {#if waitingFor === 'just-now' || onlyShowLoading}
-    <h2>{message || "This shouldn't take a sec..."}</h2>
+    <h2>
+      {message || "This shouldn't take a sec..."}
+    </h2>
   {:else if waitingFor === 'short-while'}
-    <h2>Almost finished</h2>
+    <h2>
+      Almost finished
+    </h2>
   {:else if waitingFor === 'bloody-ages'}
-    <h2 class="warning">Taking longer than expected</h2>
+    <h2 class="warning">
+      Taking longer than expected
+    </h2>
   {:else if waitingFor === 'probably-broken'}
-    <h2 class="error">Looks like somethings gone wrong :(</h2>
+    <h2 class="error">
+      Looks like somethings gone wrong :(
+    </h2>
   {/if}
 
   {#if waitingFor !== 'probably-broken'}

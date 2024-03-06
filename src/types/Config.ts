@@ -75,15 +75,15 @@ export interface SiteConfig {
     website: string; // URL of personal website
     socials: Usernames; // Keyed list of social media usernames
     socialButtonLimit: number; // Number of social links to show, before show-more clicked
-    // mailerConfig: {
-    //   // Config for sending mail client-side via emailjs
-    //   service_id: string; // The ID of the service to use
-    //   template_id: string; // The ID of the template to use
-    //   user_id: string; // The users ID / public key
-    //   template_params: {
-    //     [key: string]: string; // And additional template params
-    //   };
-    // };
+    mailerConfig: {
+      // Config for sending mail client-side via emailjs
+      service_id: string; // The ID of the service to use
+      template_id: string; // The ID of the template to use
+      user_id: string; // The users ID / public key
+      template_params: {
+        [key: string]: string; // And additional template params
+      };
+    };
     pgpKeyLink: string; // Link to PGP public key
     pgpPublicKey: string; // PGP public key to display
   };

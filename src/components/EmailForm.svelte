@@ -1,6 +1,6 @@
 <script lang="ts">
   import { slide } from 'svelte/transition';
-  import { emailJsEndpoint } from '$src/helpers/constants';
+  import emailjs from '@emailjs/browser';
   import Loading from '$src/components/Loading.svelte';
   import Heading from '$src/components/Heading.svelte';
   import { config } from '$src/store/Config';
@@ -21,26 +21,6 @@
     showMailForm = true;
   };
 
-  const sendViaNetlify = () => {
-    const encode = (data: any) => {
-      return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&');
-    };
-    fetch('/static.html', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': 'contact-form',
-        name,
-        email,
-        message,
-      }),
-    });
-  };
-
   const sendEmail = () => {
     // Update state in UI
     mailSendStatus = 'sending';
@@ -48,53 +28,46 @@
     // Grab users input from the form
     const templateParams = {
       from_name: name,
-      reply_email: email,
+      from_email: email,
       message_body: message,
     };
-
-    // Get mailer config, and combine with users input
-    const mailConfig = config.contact.mailerConfig;
-    mailConfig.template_params = {
-      ...mailConfig.template_params,
-      ...templateParams,
-    };
-
-    const reqParams = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(mailConfig),
-    };
-
-    // Send mail
-    fetch(emailJsEndpoint, reqParams)
+    
+    emailjs.send(
+      config.contact.mailerConfig.service_id,
+      config.contact.mailerConfig.template_id,
+      templateParams,
+      config.contact.mailerConfig.user_id,
+      )
       .then((response) => {
+        console.log('SUCCESS!');
         mailSendStatus = response.status === 200 ? 'success' : 'error';
         showMailForm = false;
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log('FAILED...', error.text);
         mailSendStatus = 'error';
       });
-
-    // Sending via Netlify
-    sendViaNetlify();
   };
 </script>
 
 <form
-  on:submit={sendEmail}
+  on:submit|preventDefault={sendEmail}
   class="contact-form"
   name="website-contact-form"
-  data-netlify="true"
 >
-  <Heading level="h2" color="var(--accent-4)">{$t('contact.email')}</Heading>
+  <Heading level="h2" color="var(--accent-4)">
+    {$t('contact.email')}
+  </Heading>
   {#if showMailForm && mailSendStatus != 'sending'}
-    <div class="user-deets">
+    <div class="user-details">
       <div class="input-group">
-        <label for="name">Name</label>
+        <label for="name">
+          {$t('contact.email.name')}
+        </label>
         <input
           bind:value={name}
           required
-          minlength="5"
+          minlength="2"
           maxlength="30"
           type="text"
           name="name"
@@ -114,7 +87,9 @@
         />
       </div>
     </div>
-    <label for="message">Message</label>
+    <label for="message">
+      {$t('contact.email.message')}
+    </label>
     <textarea
       bind:value={message}
       required
@@ -124,7 +99,9 @@
       id="message"
       rows="5"
     />
-    <button type="submit">Send</button>
+    <button type="submit">
+      {$t('contact.email.send')}
+    </button>
   {/if}
 
   {#if mailSendStatus === 'sending'}
@@ -132,11 +109,17 @@
   {:else if mailSendStatus !== 'pending'}
     <div class="response-info" transition:slide>
       {#if mailSendStatus === 'success'}
-        <p class="success">Message Sent :)</p>
+        <p class="success">
+          Message Sent :)
+        </p>
       {:else if mailSendStatus === 'error'}
-        <p class="error">Snap! Failed to send :(</p>
+        <p class="error">
+          Snap! Failed to send :(
+        </p>
       {/if}
-      <button type="button" on:click={reShowMailForm}>Return to Message</button>
+      <button type="button" on:click={reShowMailForm}>
+        Return to Message
+      </button>
     </div>
   {/if}
 </form>
@@ -157,7 +140,7 @@
     flex: 1;
     flex-direction: column;
     min-width: 500px;
-    .user-deets {
+    .user-details {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
@@ -210,7 +193,6 @@
       transition: all ease-in-out 0.25s;
       &:focus {
         outline: none;
-        box-shadow: 1px 1px 8px #ff00994a;
       }
     }
     textarea {
