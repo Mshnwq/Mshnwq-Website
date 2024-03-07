@@ -9,15 +9,15 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 let selectedAdapter;
 
 if (process.env.DEPLOY_TARGET === 'NETLIFY') {
-  selectedAdapter = netlifyAdapter();
+  	selectedAdapter = netlifyAdapter();
 } else if (process.env.DEPLOY_TARGET === 'VERCEL') {
-  selectedAdapter = vercelAdapter();
+  	selectedAdapter = vercelAdapter();
 } else if (process.env.DEPLOY_TARGET === 'NODE') {
-  selectedAdapter = nodeAdapter();
+  	selectedAdapter = nodeAdapter();
 } else if (process.env.DEPLOY_TARGET === 'STATIC') {
-  selectedAdapter = staticAdapter();
+  	selectedAdapter = staticAdapter();
 } else {
-  selectedAdapter = autoAdapter();
+	selectedAdapter = autoAdapter();
 }
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -34,7 +34,10 @@ const config = {
 		},
 		prerender: {
 			handleMissingId: 'ignore',
+			// handleMissingId: 'warn',
 			crawl: true,
+			// crawl: false,
+			// entries: ['/']
 		},
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.

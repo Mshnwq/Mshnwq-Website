@@ -9,17 +9,16 @@ const config: SiteConfig = {
   initialFeeds: [
     { 
       label: 'Mshnwq Blog', 
-      // url: 'https://blog.mshnwq.com/feed'
-      url: 'http://localhost:1313/index.xml'
+      url: 'https://blog.mshnwq.com/index.xml'
+      // url: 'http://localhost:1313/index.xml'
       // url: 'http://localhost:1313/index.json'
-      // url: 'https://notes.aliciasykes.com/feed'
     }
   ],
   additionalFeeds: [
     { 
       label: 'Mshnwq Blog', 
-      // url: 'https://blog.mshnwq.com/feed'
-      url: 'http://localhost:1313/index.xml'
+      url: 'https://blog.mshnwq.com/index.xml'
+      // url: 'http://localhost:1313/index.xml'
     },
     // { 
     //   label: 'Alicia Blog', 

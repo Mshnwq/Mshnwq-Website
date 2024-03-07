@@ -1,7 +1,8 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
-// export const prerender = true;
+// export const prerender = 'auto';
+export const prerender = true;
 // /** @type {import('./$types').EntryGenerator} */
 // export function entries() {
 //     return [

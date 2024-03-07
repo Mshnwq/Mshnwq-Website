@@ -86,7 +86,7 @@ export const fetchPostsFromRss = (
         rssPosts.push({ ...post, ...appendAdditionalInfo(post) });
       });
     } else {
-      console.error("rawPosts is not an array.");
+      // console.error("rawPosts is not an array.");
       rssPosts.push(rawPosts);
     }
     return rssPosts;
@@ -117,7 +117,7 @@ export const fetchPostsFromRss = (
 
   // Fetches data from an RSS endpoint, and initiates the parsing of the XML
   const fetchSinglePost = async (rssUrl: string) => {
-  //  console.log(`Fetching single post from ${rssUrl}`);
+    // console.log(`Fetching single post from ${rssUrl}`);
     const fetchMethod = svelteFetch || fetch;
     return fetchMethod(rssUrl)
       .then((response) => response.text())
@@ -126,14 +126,14 @@ export const fetchPostsFromRss = (
 
   // Initiates requests for an array of RSS feeds
   const fetchAllPosts = async (feeds: RssUrlList): Promise<RssPost[]> => {
-  //  console.log("Fetching all posts...");
+    // console.log("Fetching all posts...");
     return await Promise.all(
       // Fetch data from all RSS feeds in array
       feeds.map((feed) => fetchSinglePost(feed.url))
     ).then(
       // Flattern, de-duplicate and sort combined results
       (result) => {
-    //    console.log(result);
+        // console.log(result);
         return sortByDate(removeDuplicates(result.flat()))
       }
     );

@@ -30,7 +30,7 @@
         _loadPosts();
       });
     }
-    catch (e) { console.warn('MatrixEffect failed to load', e); }
+    catch (e) { console.warn('RSS posts failed to load', e); }
   });
   
   onDestroy(() => {
