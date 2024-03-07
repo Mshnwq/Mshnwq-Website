@@ -3,10 +3,9 @@ services:
   website:
     container_name: website
     # Pull latest image from DockerHub
-    #image: mshnwq/website
-    image: mshnwq-website:test
+    image: mshnwq-website:temp
     # To build from source, replace 'image: lissy93/devolio' with 'build: .'
-    #build: .
+    # build: .
     # Set port that web service will be served on. Keep container port as 80
     ports:
       - 4000:80
