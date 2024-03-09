@@ -515,7 +515,7 @@ const config: SiteConfig = {
       Some of my open-source projects include <a href="https://github.com/Mshnwq/Metallum-Extractor">Metallum API</a>, <a href="https://devpost.com/software/halaqh-platform">Halaqh</a>, and <a href="https://github.com/Mshnwq/Cryptography-KAU">KAU Cryptography</a>.
       In my free time, I enjoy sharing what I'v learned on my <a href="https://blog.mshnwq.com">Blog</a> aswell.`, 
 
-      `Beyond tech, I'm a (cine-biblio-audio)phile, and a health nut :)`,
+      `Beyond tech, I'm a (cine-biblio-audio)phile, and into human physiology :)`,
     ],
     picture: 'https://i.ibb.co/Rvxbdmd/profile-crop.jpg',
   },
