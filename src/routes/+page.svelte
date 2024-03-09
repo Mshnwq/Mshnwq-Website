@@ -84,7 +84,8 @@
   {/if}
 
   {#if !showLoader}
-    <!-- TODO: fix height <div id="matrix-effect"></div> -->
+    <!-- TODO: fix height  -->
+    <!-- <div id="matrix-effect"></div> -->
     <div class="tiles">
       {#each homePageLinks as navLink}
         <a
